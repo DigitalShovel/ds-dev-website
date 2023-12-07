@@ -1,0 +1,83 @@
+@use "../base/breakpoints" as *;
+
+.subnav {
+  position: sticky;
+  z-index: 99;
+  top: 72px;
+  max-width: 100%;
+  background: hsl(210, 36%, 96%, 0.85);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid var(--blue-gray-100);
+  border-bottom: 1px solid var(--blue-gray-100);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1080px;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+    transition: padding 150ms ease-in;
+
+    @include breakpoint(lg-tablet) {
+      justify-content: center;
+      padding: 0.75rem 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0.25rem 1rem;
+    margin-right: -0.5rem;
+    cursor: pointer;
+
+    @include breakpoint(sm-tablet) {
+      gap: 0.25rem;
+    }
+
+    li {
+      text-wrap: nowrap;
+    }
+  }
+
+  &__link {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    vertical-align: middle;
+    color: var(--blue-900);
+
+    @include breakpoint(sm-tablet) {
+      font-size: 0.7rem;
+    }
+
+    &--active {
+      color: white;
+      border-radius: 5px;
+      background-color: var(--blue-500);
+    }
+  }
+
+  &__divider {
+    color: var(--blue-gray-300);
+  }
+}
+
+#product {
+  scroll-margin-top: 6rem;
+
+  @include breakpoint(sm-tablet) {
+    scroll-margin-top: 8rem;
+  }
+}
+
+#bundle,
+#pricing {
+  scroll-margin-top: 6rem;
+}
+
+#specifications {
+  scroll-margin-top: 8rem;
+}

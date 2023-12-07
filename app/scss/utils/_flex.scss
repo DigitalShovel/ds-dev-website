@@ -1,0 +1,89 @@
+@use "../base/breakpoints" as *;
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col {
+  &--lg-tablet {
+    @include breakpoint(lg-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &--md-tablet {
+    @include breakpoint(md-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &--sm-tablet {
+    @include breakpoint(sm-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &--md-mobile {
+    @include breakpoint(md-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &--sm-mobile {
+    @include breakpoint(sm-mobile) {
+      flex-direction: column;
+    }
+  }
+}
+
+.flex-col-mobile {
+  @include breakpoint(md-tablet) {
+    flex-direction: column;
+  }
+}
+
+.flex-row-desktop {
+  @include breakpoint(lg-tablet) {
+    flex-direction: row;
+  }
+}
+
+.flex-row-tablet {
+  @include breakpoint(md-tablet) {
+    flex-direction: row;
+  }
+}
+
+.ai-c {
+  align-items: center;
+
+  &--tablet {
+    @include breakpoint(lg-tablet) {
+      align-items: center;
+    }
+  }
+}
+
+.ai-b {
+  align-items: baseline;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}

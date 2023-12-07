@@ -1,0 +1,50 @@
+@use "../base/breakpoints" as *;
+
+.scroll {
+  font-size: .8rem;
+  position: relative;
+  z-index: 9;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: .3rem;
+  width: fit-content;
+  transform: translateX(-50%);
+  color: var(--blue-gray-500);
+  cursor: pointer;
+
+  &__home {
+    @include breakpoint(sm-tablet) {
+      transform: translate(-50%, 0px);
+    }
+  }
+
+  &__m300 {
+    @include breakpoint(sm-tablet) {
+      transform: translate(-50%, 40px);
+    }
+  }
+
+  &__text {
+    width: max-content;
+  }
+
+  &__arrow {
+    transform: rotate(90deg);
+    animation: scrollArrow 500ms linear alternate infinite;
+
+    stroke: var(--blue-900);
+  }
+
+  @keyframes scrollArrow {
+    from {
+      transform: rotate(90deg) translateX(0px);
+    }
+
+    to {
+      transform: rotate(90deg) translateX(5px);
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@use "../base/breakpoints" as *;
+
+.footer {
+  background-color: var(--blue-900);
+
+  &__container {
+    padding: 2rem 2rem 1rem;
+    margin-top: none;
+  }
+
+  &__body {
+    max-width: 30ch;
+    font-size: 0.9rem;
+    color: var(--blue-50);
+
+    @include breakpoint(md-tablet) {
+      max-width: fit-content;
+    }
+  }
+
+  &__logo {
+    width: 150px;
+    height: 50px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include breakpoint(md-tablet) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__heading {
+    color: var(--blue-gray-400);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__list-item {
+    color: var(--blue-50);
+    font-size: 0.9rem;
+
+    &:hover {
+      color: var(--blue-200);
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    background-color: var(--blue-gray-600);
+    margin: 2rem 0 1rem;
+  }
+
+  &__copyright {
+    color: var(--blue-gray-400);
+  }
+
+  &__social {
+    cursor: pointer;
+    background-color: var(--blue-500);
+    width: 24px;
+    height: 24px;
+    padding: 0.3rem;
+    border-radius: 3px;
+    transition: background-color 100ms ease-in;
+
+    &:hover {
+      background-color: var(--blue-600);
+    }
+  }
+}

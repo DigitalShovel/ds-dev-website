@@ -1,0 +1,44 @@
+@use "../base/breakpoints" as *;
+
+/* 
+The class below is for elements that
+are visible to screen readers only 
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// Show & Hide Based On Display Size
+
+.mobile {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.desktop {
+  @include breakpoint(lg-tablet) {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-x-scroll {
+  overflow-x: hidden;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}

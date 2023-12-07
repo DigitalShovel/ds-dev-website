@@ -1,0 +1,74 @@
+@use "../base/breakpoints" as *;
+
+$pricing-set-img-widths: (
+  1: 50%,
+  3: 60%,
+  4: 70%,
+  6: 80%,
+  8: 90%,
+  10: 100%
+);
+
+.pricing {
+  &__set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint(lg-tablet) {
+      grid-template-columns: 1fr;
+
+      &:first-child .pricing__set-img {
+        margin-top: 0;
+      }
+    }
+
+    &-img {
+      justify-self: flex-end;
+      align-self: end;
+      width: auto;
+      height: auto;
+
+      @include breakpoint(lg-tablet) {
+        margin-top: 4rem;
+        margin-bottom: -1rem;
+        justify-self: center;
+        width: 100%;
+      }
+    }
+
+    &-text {
+      pointer-events: all;
+
+      h4 {
+        @include breakpoint(lg-tablet) {
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    @each $set, $width in $pricing-set-img-widths {
+      &-#{$set} {
+        margin-top: if($set == 1, 0, 4rem);
+        pointer-events: if($set == 8 or $set == 10, none, all);
+
+        .pricing__set-img {
+          width: $width;
+        }
+      }
+    }
+
+    // Reverse the image on the 10th set
+    &-10 .pricing__set-img {
+      transform: scaleX(-1);
+    }
+
+    &-detail {
+      width: 330px;
+    }
+  }
+
+  &__set-heading {
+    min-width: 90px;
+    color: var(--blue-gray-900);
+  }
+}

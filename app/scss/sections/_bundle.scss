@@ -1,0 +1,73 @@
+@use "../base/breakpoints" as *;
+
+.bundle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include breakpoint(md-tablet) {
+    align-items: center;
+  }
+
+  &__illustrations {
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+
+    @include breakpoint(md-tablet) {
+      flex-direction: column;
+    }
+
+    img {
+      object-fit: contain;
+
+      @include breakpoint(sm-desktop) {
+        width: 450px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        width: 400px;
+      }
+
+      @include breakpoint(md-mobile) {
+        width: 350px;
+      }
+    }
+
+    &--spdu {
+      max-width: 400px;
+
+      @include breakpoint(sm-desktop) {
+        max-width: 400px;
+      }
+    }
+
+    &--i300 {
+      @include breakpoint(sm-desktop) {
+        flex-direction: column;
+      }
+    }
+
+    &--awning-back {
+      margin-top: -2rem;
+    }
+
+    &--shadow {
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      transform: translateX(-50%);
+      background-color: var(--blue-gray-50);
+      width: 400px;
+      height: 300px;
+      border-radius: 100vh;
+      filter: blur(80px);
+      z-index: -1;
+
+      @include breakpoint(sm-tablet) {
+        width: 300px;
+        height: 600px;
+      }
+    }
+  }
+}

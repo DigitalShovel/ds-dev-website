@@ -1,0 +1,179 @@
+@use "../base/breakpoints" as *;
+
+:root {
+  --navbar: 73px;
+  --subnav: 129px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  @include breakpoint(sm-tablet) {
+    padding: 3rem 2rem;
+  }
+
+  @include breakpoint(sm-mobile) {
+    padding: 3rem 1rem;
+  }
+
+  &--m300 {
+    padding: 3rem 2rem 6rem;
+
+    @include breakpoint(lg-tablet) {
+      padding: 2rem 2rem 0;
+    }
+
+    @include breakpoint(md-tablet) {
+      padding: 2rem 2rem 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      padding: 2rem 2rem 5rem;
+    }
+  }
+
+  &--i300 {
+    padding: 3rem 2rem 2rem;
+
+    @include breakpoint(lg-tablet) {
+      padding: 2rem 2rem 0;
+    }
+
+    @include breakpoint(md-tablet) {
+      padding: 2rem 2rem 1rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      padding: 2rem;
+    }
+  }
+
+  &--full-width {
+    max-width: 100%;
+  }
+
+  &--sm {
+    padding: 0 2rem;
+  }
+
+  &--md {
+    padding: 2rem;
+  }
+
+  &--lg {
+    padding: 4rem 2rem;
+  }
+
+  &--xl {
+    padding: 6rem 2rem;
+  }
+
+  &--2xl {
+    padding: 8rem 2rem;
+  }
+
+  &__promotion {
+    max-width: 420px;
+    margin: 0 auto;
+
+    @include breakpoint(lg-tablet) {
+      margin: auto;
+    }
+  }
+  
+  &__text {
+    max-width: 55ch;
+  }
+}
+
+.gap {
+  &--xsm {
+    gap: 0.25rem;
+  }
+
+  &--sm {
+    gap: 0.5rem;
+  }
+
+  &--md {
+    gap: 1rem;
+  }
+
+  &--lg {
+    gap: 1.5rem;
+  }
+
+  &--xl {
+    gap: 2rem;
+  }
+
+  &--2xl {
+    gap: 3rem;
+  }
+}
+
+.mtop {
+  &--sm {
+    margin-top: 0.5rem;
+  }
+
+  &--md {
+    margin-top: 1rem;
+  }
+
+  &--lg {
+    margin-top: 2rem;
+  }
+
+  &--xl {
+    margin-top: 3rem;
+  }
+
+  &--2xl {
+    margin-top: 4rem;
+  }
+
+  &--3xl {
+    margin-top: 6rem;
+  }
+
+  &--4xl {
+    margin-top: 8rem;
+  }
+}
+
+.mbot {
+  &--sm {
+    margin-bottom: 0.5rem;
+  }
+
+  &--md {
+    margin-bottom: 1rem;
+  }
+
+  &--lg {
+    margin-bottom: 2rem;
+  }
+
+  &--xl {
+    margin-bottom: 3rem;
+  }
+
+  &--2xl {
+    margin-top: 4rem;
+  }
+
+  &--3xl {
+    margin-top: 6rem;
+  }
+
+  &--4xl {
+    margin-top: 8rem;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}

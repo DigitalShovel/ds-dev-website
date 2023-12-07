@@ -1,0 +1,234 @@
+@use "../base/breakpoints" as *;
+
+.team {
+  white-space: nowrap;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
+  }
+
+  @include breakpoint(md-mobile) {
+    .icon--lg {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .fadeIn {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 200ms ease-in;
+  }
+
+  &__title {
+    position: relative;
+    padding-left: 3rem;
+
+    @media (max-width: 1080px) {
+      padding-left: 2rem;
+    }
+
+    // large dot next to each department
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background-color: var(--blue-900);
+      border-radius: 100vh;
+    }
+
+    // straight line connecting the dot to the dot above it only
+    &--add-line::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 7px;
+      top: 0;
+      transform: translateY(-75%);
+      width: 1px;
+      height: 75px;
+      background-color: var(--blue-900);
+    }
+  }
+
+  &__list-member,
+  &__list-member--open-position {
+
+    // small dot next to each team member
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      background-color: var(--blue-900);
+      border-radius: 100vh;
+    }
+
+    // straight line connecting the dot to the dot above it
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 7px;
+      top: 0;
+      transform: translateY(-61%);
+      width: 1px;
+      height: 70px;
+      background-color: var(--blue-900);
+    }
+  }
+
+  &__list-member {
+    align-items: center;
+    padding-left: 3rem;
+    position: relative;
+
+    @media (max-width: 1080px) {
+      padding-left: 2rem;
+    }
+
+    &:hover {
+      .fadeIn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .team__list-member-details {
+        transform: translateY(-5px);
+      }
+    }
+
+    &::before {
+      background-color: var(--blue-900);
+    }
+
+    img {
+      border-radius: 100vh;
+      border: 1px solid var(--blue-gray-300);
+    }
+
+    h6 {
+      font-size: 0.9rem;
+    }
+
+    &--open-position {
+      color: var(--blue-gray-600);
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      .team__list-member-details {
+        transform: translateY(0);
+      }
+    }
+
+    &--open-position:hover {
+      .team__list-member-details {
+        transform: translateY(0);
+      }
+    }
+
+    &--open-position::before {
+      background-color: white;
+      border: 1px solid var(--blue-900);
+    }
+  }
+
+  &__list-member-details {
+    transform: translateY(5px);
+    transition: transform 200ms ease-in;
+  }
+}
+
+.join-us {
+  &__content {
+    background-image: url(../images/icons/icon_logo-symbol-transparent.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 35%;
+    background-size: 25%;
+    background-color: var(--blue-500);
+    border-right: 8px solid var(--blue-300);
+    border-left: 8px solid var(--blue-300);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0px 12px 24px 0px hsla(213, 95%, 19%, 0.2), 0px 16px 64px 0px hsla(213, 38%, 36%, 0.35);
+
+    @include breakpoint(sm-tablet) {
+      background-position: center;
+      background-size: 50%;
+    }
+  }
+
+  &__heading {
+    font-size: 2.441rem;
+    line-height: 1.1;
+    color: var(--blue-50);
+
+    @include breakpoint(sm-tablet) {
+      margin-bottom: -0.5rem;
+      font-size: 1.953rem;
+    }
+  }
+
+  &__subheading {
+    line-height: 1.2;
+
+    emphasis {
+      margin: 0 0.2rem 0 0.1rem;
+    }
+  }
+
+  &__body {
+    max-width: 45ch;
+    color: var(--blue-50);
+
+    @include breakpoint(sm-tablet) {
+      max-width: max-content;
+      line-height: 1.3;
+      font-size: 1rem;
+    }
+  }
+}
+
+// disabled the gallery for now
+
+// .gallery {
+//   &__grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(2, auto);
+//     gap: 1rem;
+
+//     @include breakpoint(lg-tablet) {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     @include breakpoint(sm-tablet) {
+//       grid-template-columns: repeat(1, 1fr);
+//     }
+//   }
+
+//   &__cta {
+//     line-height: 1.2;
+//     text-align: center;
+//   }
+
+//   img {
+//     max-width: 100%;
+//     max-height: 100%;
+//     border-radius: 10px;
+//     box-shadow: 0px 8px 18px -6px hsla(213, 78%, 16%, 0.35);
+//   }
+// }

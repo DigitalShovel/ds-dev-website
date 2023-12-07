@@ -1,0 +1,339 @@
+@use "../base/breakpoints" as *;
+
+.gallery {
+  display: grid;
+
+  &__3x2 {
+    position: absolute;
+    transform: translateY(-70px) translateX(250px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo-3 photo-4"
+      "photo-5 photo-6"
+      "photo-7 photo-8";
+
+    @include breakpoint(lg-tablet) {
+      transform: translateY(-90px) translateX(100px);
+    }
+
+    @include breakpoint(sm-tablet) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "photo-3 photo-4 photo-5 photo-6 photo-7 photo-8";
+      transform: translateY(210px) translateX(-50%);
+      gap: 0.5rem;
+    }
+
+    @include breakpoint(md-mobile) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "photo-3 photo-4 photo-5"
+        "photo-6 photo-7 photo-8";
+      top: 100%;
+      gap: 0.5rem;
+    }
+
+    &-container {
+      position: relative;
+      top: -225px;
+    }
+  }
+
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @include breakpoint(sm-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__3x3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo-1 photo-4 photo-7"
+      "photo-2 photo-5 photo-8"
+      "photo-3 photo-6 photo-9";
+
+    @include breakpoint(md-mobile) {
+      gap: 0.5rem;
+    }
+  }
+}
+
+.modal {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .95);
+  backdrop-filter: saturate(180%) blur(5px);
+  transition: opacity 300ms ease-in;
+
+  &-container {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    transition: all 300ms ease-in; // this transition allows the modal to fade out smoothly
+  }
+
+  &__photo {
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow-elevation-high);
+    max-width: 800px;
+    max-height: 500px;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint(lg-tablet) {
+      max-width: 500px;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      border-radius: 10px;
+    }
+
+    @include breakpoint(sm-tablet) {
+      max-width: 350px;
+    }
+
+    &-container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 auto;
+      width: 640px;
+      height: 480px;
+
+      @include breakpoint(md-tablet) {
+        width: 480px;
+        height: 360px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        width: 430px;
+        height: 320px;
+      }
+
+      @include breakpoint(md-mobile) {
+        width: 270px;
+        height: 200px;
+      }
+    }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    text-align: center;
+  }
+
+  &__instructions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    font-size: 0.8rem;
+    color: var(--blue-gray-500);
+
+    @include breakpoint(md-tablet) {
+      display: none;
+    }
+  }
+
+  .arrow-key {
+    background: var(--cool-gray-100);
+    font-size: 0.9rem;
+    padding: 0rem 0.2rem;
+    border: 1px solid var(--cool-gray-200);
+    border-radius: 5px;
+    margin: 0.2rem;
+  }
+}
+
+.open {
+  display: block;
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  z-index: 9999;
+  top: 1rem;
+  right: 2rem;
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+  aspect-ratio: 1;
+
+  .line {
+    width: 100%;
+    height: 2px;
+    transition: transform 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transform-origin: left;
+    background-color: var(--blue-gray-400);
+
+    &-1 {
+      transform: rotate(45deg) translate(0px, -4px);
+    }
+
+    &-2 {
+      transform: rotate(-45deg) translate(-3px, 6px);
+    }
+  }
+}
+
+.arrow {
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+
+  &:hover {
+    circle {
+      fill: var(--blue-300);
+    }
+
+    path {
+      stroke: var(--blue-700);
+    }
+  }
+
+  @include breakpoint(sm-tablet) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.photo {
+  position: relative;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid var(--blue-200);
+  transition: border 200ms ease-in-out, box-shadow 200ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid var(--blue-500);
+    box-shadow: 0 0 10px -2px var(--blue-500);
+  }
+
+  @include breakpoint(lg-tablet) {
+    border-radius: 5px;
+  }
+
+  &__m300 {
+    height: 70px;
+    width: auto;
+
+    @include breakpoint(lg-tablet) {
+      height: 50px;
+    }
+  }
+
+  &__i300 {
+    height: 70px;
+    width: auto;
+
+    @include breakpoint(lg-tablet) {
+      // height: 50px;
+    }
+  }
+
+  &__awning {
+    height: 70px;
+    min-width: 80px;
+
+    @include breakpoint(lg-tablet) {
+      height: 50px;
+    }
+  }
+
+  &__pdu {
+    height: 70px;
+    max-width: 80px;
+
+    @include breakpoint(lg-tablet) {
+      height: 50px;
+    }
+
+    &--contain {
+      object-fit: contain;
+    }
+  }
+}
+
+.photo-main {
+  grid-area: photo-main;
+
+  @include breakpoint(lg-tablet) {
+    height: 300px;
+  }
+}
+
+.photo-1 {
+  grid-area: photo-1;
+}
+
+.photo-2 {
+  grid-area: photo-2;
+}
+
+.photo-3 {
+  grid-area: photo-3;
+}
+
+.photo-4 {
+  grid-area: photo-4;
+}
+
+.photo-5 {
+  grid-area: photo-5;
+}
+
+.photo-6 {
+  grid-area: photo-6;
+}
+
+.photo-7 {
+  grid-area: photo-7;
+}
+
+.photo-8 {
+  grid-area: photo-8;
+}

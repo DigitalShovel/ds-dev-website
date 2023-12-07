@@ -1,0 +1,51 @@
+@use "../base/breakpoints" as *;
+
+.interview {
+  &__hero {
+    align-items: flex-start;
+
+    @include breakpoint(lg-tablet) {
+      align-items: center;
+    }
+
+    p {
+      max-width: 55ch;
+
+      @include breakpoint(lg-tablet) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__interviewers {
+    img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-family: var(--heavy-compact-font);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      letter-spacing: 0.5px;
+
+      @include breakpoint(lg-tablet) {
+        text-align: center;
+      }
+    }
+
+    h3 {
+      color: var(--blue-500);
+      font-size: clamp(1rem, 6vw, 1.5rem);
+      letter-spacing: -0.5px;
+      font-family: var(--medium-font);
+      font-weight: normal;
+    }
+
+    p {
+      font-size: clamp(0.8rem, 3vw, 1rem);
+      color: var(--blue-gray-500);
+      line-height: 1.6;
+    }
+  }
+}

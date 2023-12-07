@@ -1,0 +1,197 @@
+@use "../base/breakpoints" as *;
+
+:root {
+  --heavy-compact-font: "Right Grotesk Compact Black", Inter, Roboto, sans-serif;
+  --heavy-wide-font: "Right Grotesk Wide Black", Inter, Roboto, sans-serif;
+  --medium-wide-font: "Right Grotesk Wide Medium", Inter, Roboto, sans-serif;
+  --light-wide-font: "Right Grotesk Wide Fine", Inter, Roboto, sans-serif;
+  --medium-font: "Right Grotesk Medium", Inter, Roboto, sans-serif;
+  --body-font: Inter, Roboto, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  font-family: var(--heavy-wide-font);
+}
+
+h2 {
+  font-size: clamp(0.8rem, 4vw, 1rem);
+  font-weight: 600;
+  letter-spacing: -0.1px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+
+  @include breakpoint(lg-tablet) {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  @include breakpoint(md-mobile) {
+    line-height: 1;
+  }
+}
+
+h4 {
+  font-size: 1.44rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+
+  @include breakpoint(md-mobile) {
+    line-height: 1;
+    font-size: 1rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: var(--blue-gray-600);
+}
+
+small {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+.section {
+  &__heading {
+    line-height: .9;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  &__heading {
+    font-size: clamp(1.75rem, 3vw, 2.441rem);
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    @include breakpoint(sm-tablet) {
+      text-align: center;
+
+      &--col {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__body {
+    max-width: 45ch;
+    color: var(--blue-gray-600);
+
+    @include breakpoint(sm-tablet) {
+      max-width: 35ch;
+      text-align: center;
+    }
+  }
+
+  &--emphasis {
+    font-weight: 700;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--light-blue {
+    color: var(--blue-50);
+  }
+
+  &--red {
+    color: var(--red-400);
+  }
+
+  &--yellow {
+    color: var(--yellow-600);
+  }
+
+  &--teal {
+    color: var(--teal-500);
+  }
+
+  &--blue {
+    color: var(--blue-500);
+  }
+
+  &--dark-blue {
+    color: var(--blue-900);
+  }
+
+  &--white {
+    color: white;
+  }
+
+  &--larger {
+    transform: scale(1.2);
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--discount {
+    text-decoration: line-through;
+  }
+
+  &--strikethrough {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: -2px;
+      z-index: 1;
+      width: 100%;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-image: url("../images/illustrations/strikethrough.svg");
+    }
+  }
+
+  &--strikethrough-small {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 3px;
+      z-index: 1;
+      width: 55px;
+      height: 15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../images/illustrations/strikethrough-small.svg");
+    }
+  }
+}

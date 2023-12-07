@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Search engine optimization -->
+  <meta name="author" content="Digital Shovel">
+  <meta name="description"
+    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+
+  <!-- Social media tags -->
+  <meta property="og:title" content="Digital Shovel • Home">
+  <meta property="og:description"
+    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+  <meta property="og:image" content="/images/backgrounds/meta-image.jpg">
+  <meta property="og:url" content="/index.html">
+  <meta property="og:site_name" content="Digital Shovel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Digital Shovel Logo">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="dist/style.min.css?v=2.1.1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    media="print" onload="this.media='all'" rel="stylesheet">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script defer src="/app/js/ScrollTrigger.min.js"></script>
+  <script defer src="/app/js/ScrollSmoother.min.js"></script>
+
+  <!-- Javascript -->
+  <script defer src="/app/js/home.js"></script>
+  <script defer src="/app/js/nav-toggle.js"></script>
+  <script defer src="/app/js/dropdown.js"></script>
+  <script defer src="/app/js/scroll-animations-home.js?v=1.0"></script>
+  <script defer src="/app/js/copyright.js"></script>
+  <script defer src="/app/js/logo-scroller.js"></script>
+
+  <title>Digital Shovel</title>
+
+  <!-- Hotjar Tracking Code for https://digitalshovel.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3324634, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" class="navbar__logo" aria-label="Digital Shovel Logo">
+        <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
+          <g>
+            <path fill="var(--blue-500)" d="M38.54.49H0v25.7h12.85V13.34h25.69v12.85h12.85V.49H38.54z" />
+            <rect fill="var(--blue-500)" x="19.27" y="19.76" width="12.85" height="25.7" rx="4" />
+            <path fill="var(--blue-500)"
+              d="M38.54 47.66 25.52 60.69 12.85 48.02V32.61H0V53.4h.06l25.46 25.46 25.82-25.82h.05V32.61H38.54v15.05z" />
+            <path fill="var(--warm-gray-500)"
+              d="M70.75 37.25V.53H84a15 15 0 0 1 10.86 4.22 14.43 14.43 0 0 1 4.36 10.84v6.6A14.4 14.4 0 0 1 94.86 33 15 15 0 0 1 84 37.25ZM79.3 7.09v23.6h4.13a6.48 6.48 0 0 0 5.32-2.33 9.39 9.39 0 0 0 1.92-6.17v-6.65a9.29 9.29 0 0 0-1.92-6.13 6.5 6.5 0 0 0-5.32-2.32ZM110.52 37.25H102V.53h8.5ZM142.92 32.18a16 16 0 0 1-5.43 3.91 20.71 20.71 0 0 1-8.93 1.69 15.06 15.06 0 0 1-11.06-4.19 14.59 14.59 0 0 1-4.25-10.87v-7.66a14.83 14.83 0 0 1 4.15-10.85A14.34 14.34 0 0 1 128.08 0q7.09 0 10.62 3.28a13.19 13.19 0 0 1 4 9l-.05.15h-8A7.7 7.7 0 0 0 132.79 8a6 6 0 0 0-4.43-1.46 5.74 5.74 0 0 0-4.79 2.36 9.7 9.7 0 0 0-1.82 6.1v7.71a9.82 9.82 0 0 0 1.8 6.17 5.93 5.93 0 0 0 5 2.33 13.84 13.84 0 0 0 3.69-.38 5.84 5.84 0 0 0 2.11-1V24h-5.77v-5.61h14.33ZM154.61 37.25h-8.5V.53h8.5ZM184.81 7.09h-9.69v30.16h-8.55V7.09H157V.53h27.85ZM202.82 30.11h-11.57l-2.07 7.14h-8.58L192.46.53h9.15l11.88 36.72h-8.57Zm-9.68-6.55h7.79l-3.83-13.14h-.1ZM223.66 30.69h15.81v6.56h-24.36V.53h8.55ZM90.24 70.69a3.7 3.7 0 0 0-1.28-3 16.67 16.67 0 0 0-4.62-2.24q-7-2.19-10.31-4.7a8.52 8.52 0 0 1-3.36-7.26 8.76 8.76 0 0 1 4-7.46 17.05 17.05 0 0 1 10.15-2.85 15.4 15.4 0 0 1 10 3.14 9.58 9.58 0 0 1 3.77 8.08v.15h-8.32A4.66 4.66 0 0 0 88.78 51a5.85 5.85 0 0 0-4.11-1.37 6.43 6.43 0 0 0-4 1.14 3.41 3.41 0 0 0-1.46 2.79 3 3 0 0 0 1.48 2.59 28.9 28.9 0 0 0 5.53 2.43 26 26 0 0 1 9.42 4.59 9.38 9.38 0 0 1 3.17 7.49A8.85 8.85 0 0 1 95 78.22Q91.22 81 85 81a18.64 18.64 0 0 1-10.82-3.14 10 10 0 0 1-4.44-9l.05-.16h8.3c0 2.13.57 3.64 1.71 4.55a8.33 8.33 0 0 0 5.2 1.28 6.18 6.18 0 0 0 3.94-1.06 3.4 3.4 0 0 0 1.3-2.78ZM131.42 80.43h-8.5V65.65h-13.6v14.78h-8.55V43.71h8.55v15.38h13.6V43.71h8.5ZM165 65.37a15.4 15.4 0 0 1-4.3 11.19A15 15 0 0 1 149.44 81a15 15 0 0 1-15.66-15.59v-6.65a15.32 15.32 0 0 1 4.32-11.17 16.61 16.61 0 0 1 22.54 0A15.29 15.29 0 0 1 165 58.76Zm-8.5-6.66a10.58 10.58 0 0 0-1.86-6.45 6.75 6.75 0 0 0-10.51 0 10.67 10.67 0 0 0-1.83 6.46v6.66a10.75 10.75 0 0 0 1.85 6.51 6.2 6.2 0 0 0 5.31 2.52 6.06 6.06 0 0 0 5.2-2.52 10.81 10.81 0 0 0 1.84-6.51ZM180 70.47l.25 1.33h.15l.26-1.23 7.28-26.86h8.93l-11.9 36.72h-9.21l-11.89-36.72h8.9ZM220.83 64.72h-14.41v9.15h17v6.56h-25.55V43.71h25.58v6.55h-17v7.9h14.41ZM233.64 73.87h15.81v6.56h-24.36V43.71h8.55Z" />
+          </g>
+        </svg>
+      </a>
+      <button class="navbar__hamburger" aria-controls="navbar__links" aria-expanded="false">
+        <span class="sr-only" aria-label="Menu">Menu</span>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+      </button>
+      <ul class="navbar__links" data-visible="false">
+        <li class="navbar__overlay"></li>
+        <li>
+          <a href="/" class="navbar__logo mobile" aria-label="Digital Shovel Logo">
+            <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
+              <g>
+                <path fill="var(--blue-500)" d="M38.54.49H0v25.7h12.85V13.34h25.69v12.85h12.85V.49H38.54z" />
+                <rect fill="var(--blue-500)" x="19.27" y="19.76" width="12.85" height="25.7" rx="4" />
+                <path fill="var(--blue-500)"
+                  d="M38.54 47.66 25.52 60.69 12.85 48.02V32.61H0V53.4h.06l25.46 25.46 25.82-25.82h.05V32.61H38.54v15.05z" />
+                <path fill="var(--warm-gray-500)"
+                  d="M70.75 37.25V.53H84a15 15 0 0 1 10.86 4.22 14.43 14.43 0 0 1 4.36 10.84v6.6A14.4 14.4 0 0 1 94.86 33 15 15 0 0 1 84 37.25ZM79.3 7.09v23.6h4.13a6.48 6.48 0 0 0 5.32-2.33 9.39 9.39 0 0 0 1.92-6.17v-6.65a9.29 9.29 0 0 0-1.92-6.13 6.5 6.5 0 0 0-5.32-2.32ZM110.52 37.25H102V.53h8.5ZM142.92 32.18a16 16 0 0 1-5.43 3.91 20.71 20.71 0 0 1-8.93 1.69 15.06 15.06 0 0 1-11.06-4.19 14.59 14.59 0 0 1-4.25-10.87v-7.66a14.83 14.83 0 0 1 4.15-10.85A14.34 14.34 0 0 1 128.08 0q7.09 0 10.62 3.28a13.19 13.19 0 0 1 4 9l-.05.15h-8A7.7 7.7 0 0 0 132.79 8a6 6 0 0 0-4.43-1.46 5.74 5.74 0 0 0-4.79 2.36 9.7 9.7 0 0 0-1.82 6.1v7.71a9.82 9.82 0 0 0 1.8 6.17 5.93 5.93 0 0 0 5 2.33 13.84 13.84 0 0 0 3.69-.38 5.84 5.84 0 0 0 2.11-1V24h-5.77v-5.61h14.33ZM154.61 37.25h-8.5V.53h8.5ZM184.81 7.09h-9.69v30.16h-8.55V7.09H157V.53h27.85ZM202.82 30.11h-11.57l-2.07 7.14h-8.58L192.46.53h9.15l11.88 36.72h-8.57Zm-9.68-6.55h7.79l-3.83-13.14h-.1ZM223.66 30.69h15.81v6.56h-24.36V.53h8.55ZM90.24 70.69a3.7 3.7 0 0 0-1.28-3 16.67 16.67 0 0 0-4.62-2.24q-7-2.19-10.31-4.7a8.52 8.52 0 0 1-3.36-7.26 8.76 8.76 0 0 1 4-7.46 17.05 17.05 0 0 1 10.15-2.85 15.4 15.4 0 0 1 10 3.14 9.58 9.58 0 0 1 3.77 8.08v.15h-8.32A4.66 4.66 0 0 0 88.78 51a5.85 5.85 0 0 0-4.11-1.37 6.43 6.43 0 0 0-4 1.14 3.41 3.41 0 0 0-1.46 2.79 3 3 0 0 0 1.48 2.59 28.9 28.9 0 0 0 5.53 2.43 26 26 0 0 1 9.42 4.59 9.38 9.38 0 0 1 3.17 7.49A8.85 8.85 0 0 1 95 78.22Q91.22 81 85 81a18.64 18.64 0 0 1-10.82-3.14 10 10 0 0 1-4.44-9l.05-.16h8.3c0 2.13.57 3.64 1.71 4.55a8.33 8.33 0 0 0 5.2 1.28 6.18 6.18 0 0 0 3.94-1.06 3.4 3.4 0 0 0 1.3-2.78ZM131.42 80.43h-8.5V65.65h-13.6v14.78h-8.55V43.71h8.55v15.38h13.6V43.71h8.5ZM165 65.37a15.4 15.4 0 0 1-4.3 11.19A15 15 0 0 1 149.44 81a15 15 0 0 1-15.66-15.59v-6.65a15.32 15.32 0 0 1 4.32-11.17 16.61 16.61 0 0 1 22.54 0A15.29 15.29 0 0 1 165 58.76Zm-8.5-6.66a10.58 10.58 0 0 0-1.86-6.45 6.75 6.75 0 0 0-10.51 0 10.67 10.67 0 0 0-1.83 6.46v6.66a10.75 10.75 0 0 0 1.85 6.51 6.2 6.2 0 0 0 5.31 2.52 6.06 6.06 0 0 0 5.2-2.52 10.81 10.81 0 0 0 1.84-6.51ZM180 70.47l.25 1.33h.15l.26-1.23 7.28-26.86h8.93l-11.9 36.72h-9.21l-11.89-36.72h8.9ZM220.83 64.72h-14.41v9.15h17v6.56h-25.55V43.71h25.58v6.55h-17v7.9h14.41ZM233.64 73.87h15.81v6.56h-24.36V43.71h8.55Z" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="dropdown__button">
+            <span class="dropdown__title">Products</span>
+            <svg class="dropdown__chevron dropdown__chevron--blue" width="13" height="12" viewBox="0 0 13 12"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 1L7.95455 6L2.5 11" />
+            </svg>
+          </button>
+
+          <div class="dropdown__menu-container">
+            <div class="dropdown__menu" aria-role="menu" aria-hidden="true">
+              <a class="dropdown__menu-item dropdown__link" href="M300" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_m300.svg" alt="Minipod Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    M300 Minipod
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Outdoor Solution</small>
+                </div>
+              </a>
+              <a class="dropdown__menu-item dropdown__link" href="i300" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_i300.svg" alt="Minipod Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    i300 Minipod
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Indoor Solution</small>
+                </div>
+              </a>
+              <a class="dropdown__menu-item dropdown__link" href="nanopod" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_nanopod.svg" alt="Minipod Icon"
+                  aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    NanoPOD
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Indoor/Outdoor Solution</small>
+                </div>
+              </a>
+              <a class="dropdown__menu-item dropdown__link" href="awnings" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_awning.svg" alt="Awning Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    Awnings
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Air-Intake Solution</small>
+                </div>
+              </a>
+              <!-- <a class="dropdown__menu-item dropdown__link" href="fans" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_fan.svg" alt="Fan Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    Fans
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Cooling Solution</small>
+                </div>
+              </a> -->
+              <a class="dropdown__menu-item dropdown__link" href="spdu" tabindex="-1" aria-role="menu-item">
+                <img class="icon--md" src="images/icons/icon_navbar_spdu.svg" alt="SPDU Icon" aria-hidden="true" />
+                <div class="dropdown__text">
+                  <h5>
+                    SmartPDU
+                    <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49 6L7.5 6" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-900)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </h5>
+                  <small>Automation & Monitoring</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="navbar__link" href="turnkey-solutions">Turn-Key Solutions</a>
+        </li>
+        <li>
+          <a class="navbar__link" href="press">Press</a>
+        </li>
+        <li>
+          <a class="navbar__link" href="contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="hero container">
+      <h1 class="hero__heading hero__heading--caps hero__heading--sm-width">
+        <emphasis><span class="text-1">Revolutionary</span></emphasis> <br> <span class="text-2">crypto
+          mining</span> <span class="text-3">containers</span>
+      </h1>
+      <div class="hero__content">
+        <div class="hero__left-side">
+          <iframe class="hero__video" width="490" height="275"
+            src="https://www.youtube.com/embed/wbr2C32bpQc?&autoplay=0&mute=1"
+            title="The New M300 Minipod Bitcoin Mining  Container from Digital Shovel" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="hero__cta">
+            <p class="hero__body hero__body--home">
+              Discover our continued innovation, competitive pricing, and what really sets us apart by exploring our
+              offering. </p>
+            <div class="flex gap--sm">
+              <a class="btn btn--primary" href="M300">Products
+                <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.49 6L7.5 6" />
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+              </a>
+              <a class="btn btn--tertiary" href="contact">Contact Sales
+                <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.49 6L7.5 6" />
+                  <path d="M2.5 1L7.95455 6L2.5 11" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__right-side">
+          <div class="hero__3d-m300">
+            <div class="camera-rotate">
+              <div class="base">
+                <div class="spine">
+                  <div class="side-1"></div>
+                  <div class="side-2"></div>
+                  <div class="side-3">
+                    <div class="tooltip tooltip-flipped">
+                      <h2>4x</h2>
+                      <p>15,000 CFM Fans</p>
+                    </div>
+                  </div>
+                  <div class="side-4">
+                    <div class="tooltip tooltip-normal">
+                      <h2>3x</h2>
+                      <p>Awning-based Intake System</p>
+                    </div>
+                  </div>
+                  <div class="side-top"></div>
+                  <div class="side-bottom"></div>
+                  <div class="door-1"></div>
+                  <div class="busway-1">
+                    <div class="tooltip tooltip-busway">
+                      <h2>2x</h2>
+                      <p>Rooftop Mounted Busways</p>
+                    </div>
+                  </div>
+                  <div class="door-2"></div>
+                  <div class="busway-2">
+                    <div class="tooltip tooltip-busway tooltip-busway-flipped">
+                      <h2>2x</h2>
+                      <p>Rooftop Mounted Busways</p>
+                    </div>
+                  </div>
+                  <div class="awning-1">
+                    <div class="awning-side-1"></div>
+                    <div class="awning-side-2"></div>
+                    <div class="awning-side-3"></div>
+                    <div class="awning-side-4"></div>
+                    <div class="awning-side-5"></div>
+                  </div>
+                  <div class="awning-2">
+                    <div class="awning-side-1"></div>
+                    <div class="awning-side-2"></div>
+                    <div class="awning-side-3"></div>
+                    <div class="awning-side-4"></div>
+                    <div class="awning-side-5"></div>
+                  </div>
+                  <div class="awning-3">
+                    <div class="awning-side-1"></div>
+                    <div class="awning-side-2"></div>
+                    <div class="awning-side-3"></div>
+                    <div class="awning-side-4"></div>
+                    <div class="awning-side-5"></div>
+                  </div>
+                  <div class="fan-1">
+                    <div class="fan-side-1"></div>
+                    <div class="fan-side-2"></div>
+                    <div class="fan-side-3"></div>
+                    <div class="fan-side-4"></div>
+                    <div class="fan-side-5"></div>
+                    <div class="fan-extension-1"></div>
+                    <div class="fan-extension-2"></div>
+                    <div class="fan-extension-3"></div>
+                    <div class="fan-extension-4"></div>
+                    <div class="fan-extension-5"></div>
+                    <div class="fan-extension-6"></div>
+                    <div class="fan-extension-7"></div>
+                    <div class="fan-extension-8"></div>
+                    <div class="fan-swing-base">
+                      <div class="fan-swing-1"></div>
+                      <div class="fan-swing-2"></div>
+                      <div class="fan-swing-3"></div>
+                      <div class="fan-swing-4"></div>
+                    </div>
+                  </div>
+                  <div class="fan-2">
+                    <div class="fan-side-1"></div>
+                    <div class="fan-side-2"></div>
+                    <div class="fan-side-3"></div>
+                    <div class="fan-side-4"></div>
+                    <div class="fan-side-5"></div>
+                    <div class="fan-extension-1"></div>
+                    <div class="fan-extension-2"></div>
+                    <div class="fan-extension-3"></div>
+                    <div class="fan-extension-4"></div>
+                    <div class="fan-extension-5"></div>
+                    <div class="fan-extension-6"></div>
+                    <div class="fan-extension-7"></div>
+                    <div class="fan-extension-8"></div>
+                    <div class="fan-swing-base">
+                      <div class="fan-swing-1"></div>
+                      <div class="fan-swing-2"></div>
+                      <div class="fan-swing-3"></div>
+                      <div class="fan-swing-4"></div>
+                    </div>
+                  </div>
+                  <div class="fan-3">
+                    <div class="fan-side-1"></div>
+                    <div class="fan-side-2"></div>
+                    <div class="fan-side-3"></div>
+                    <div class="fan-side-4"></div>
+                    <div class="fan-side-5"></div>
+                    <div class="fan-extension-1"></div>
+                    <div class="fan-extension-2"></div>
+                    <div class="fan-extension-3"></div>
+                    <div class="fan-extension-4"></div>
+                    <div class="fan-extension-5"></div>
+                    <div class="fan-extension-6"></div>
+                    <div class="fan-extension-7"></div>
+                    <div class="fan-extension-8"></div>
+                    <div class="fan-swing-base">
+                      <div class="fan-swing-1"></div>
+                      <div class="fan-swing-2"></div>
+                      <div class="fan-swing-3"></div>
+                      <div class="fan-swing-4"></div>
+                    </div>
+                  </div>
+                  <div class="fan-4">
+                    <div class="fan-side-1"></div>
+                    <div class="fan-side-2"></div>
+                    <div class="fan-side-3"></div>
+                    <div class="fan-side-4"></div>
+                    <div class="fan-side-5"></div>
+                    <div class="fan-extension-1"></div>
+                    <div class="fan-extension-2"></div>
+                    <div class="fan-extension-3"></div>
+                    <div class="fan-extension-4"></div>
+                    <div class="fan-extension-5"></div>
+                    <div class="fan-extension-6"></div>
+                    <div class="fan-extension-7"></div>
+                    <div class="fan-extension-8"></div>
+                    <div class="fan-swing-base">
+                      <div class="fan-swing-1"></div>
+                      <div class="fan-swing-2"></div>
+                      <div class="fan-swing-3"></div>
+                      <div class="fan-swing-4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="floor">
+                <div class="shadows">
+                </div>
+              </div>
+            </div>
+            <button aria-label="Pause Button" class="btn__pause">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="9" fill="var(--blue-100)" />
+                <path class="" fill-rule="evenodd" clip-rule="evenodd" d="M10 7H7V15H10V7ZM15 7H12V15H15V7Z"
+                  fill="var(--blue-500)" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#scroller" class="scroll scroll__home">
+      <span class="scroll__text">scroll for more</span>
+      <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    
+    <section id="scroller" class="container scroller-container">
+      <div class="flex flex-col ai-c">
+        <h2 class="testimonials__subheading">As Seen On</h2>
+        <h3 class="testimonials__heading">Media Outlets</h3>
+      </div>
+      <div class="scroller" data-direction="left" data-speed="slow">
+        <div class="scroller__inner">
+          <img class="scroller__inner-item" src="images/press-logos/benzinga.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/bitcoin-magazine.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/blockchain-bytes-daily.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/blockster.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/cision-prn.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/Coinscreed.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/cryptonews.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/easydailycrypto.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/ico-holder.png" alt="Benzinga Logo">
+          <img class="scroller__inner-item" src="images/press-logos/investors-observer.png" alt="Benzinga Logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="bundle" class="bundle container">
+      <div class="flex ai-c gap--md">
+        <img id="bundle__logo" class="icon--lg icon--full-height" src="images/icons/icon_logo.svg" alt="Logo Icon">
+        <h2 id="bundle__logo-text" class="text__heading flex flex-col ai-start">M300 <span
+            class="text--emphasis text--blue">Minipod</span>
+        </h2>
+      </div>
+      <p class="text__body">
+        Includes main container, racking, back-sheets, Smart PDUs,
+        4X ventilation fan, ATMS and awning-based intake system.
+      </p>
+      <div class="bundle__illustrations">
+        <img id="minipod-front" src="images/illustrations/minipod-front_with-text.svg"
+          alt="Minipod Illustration Front Side">
+        <img id="minipod-back" src="images/illustrations/minipod-back_with-text.svg"
+          alt="Minipod Illustration Back Side">
+        <div class="minipod__illustrations--shadow"></div>
+      </div>
+      <a href="M300" class="btn btn--primary btn--as-c">Minipod Info
+        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.49 6L7.5 6" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2.5 1L7.95455 6L2.5 11" stroke="var(--blue-50)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </section>
+
+    <section class="app">
+      <article class="app--blue">
+        <div class="app__container">
+          <div class="app__text flex flex-col gap--lg">
+            <div class="flex ai-c gap--sm">
+              <img class="icon--md" src="images/icons/icon_filter.svg" alt="">
+              <h2 class="app__subheading">Fully Control & Automations</h2>
+            </div>
+            <h3 class="app__heading">Configure your Minipods with our smooth, easy-to-use, brand new UI.</h3>
+            <p class="app__body--light">One of the greatest strengths of the Minipod is the <span
+                class="text--emphasis text--light-blue">
+                Smart Power Distribution
+                Unit (SPDU)
+              </span> that comes along with it. The SPDU and its user interface give you the power to control
+              numerous
+              pricing to customize your Minipod and miners.</p>
+            <a href="M300" class="btn btn--primary btn--white">Products <svg class="btn__chevron" width="13" height="12"
+                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.49 6L7.5 6" />
+                <path d="M2.5 1L7.95455 6L2.5 11" />
+              </svg></a>
+          </div>
+          <div class="app__mockup">
+            <figure class="app__mockup-img app__mockup-img-control"></figure>
+          </div>
+        </div>
+      </article>
+      <article class="app--white">
+        <div class="app__container app__container--reversed">
+          <div class="app__text flex flex-col gap--lg">
+            <div class="flex ai-c gap--sm">
+              <img class="icon--md" src="images/icons/icon_monitor.svg" alt="">
+              <h2 class="app__subheading app__subheading--blue">Monitor everything, anywhere, anytime</h2>
+            </div>
+            <h3 class="app__heading app__heading--dark-blue">Analyze your Minipod in real time from wherever you
+              are.
+            </h3>
+            <p class="app__body--dark">
+              To ensure maximum efficiency and profit, we provide <span class="text--emphasis text--blue">real-time
+                data</span> for you to monitor every event that
+              occurs. Determine the time period you want to analyze and never miss anything.
+            </p>
+            <a href="M300" class="btn btn--primary">Products <svg class="btn__chevron" width="13" height="12"
+                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.49 6L7.5 6" />
+                <path d="M2.5 1L7.95455 6L2.5 11" />
+              </svg>
+            </a>
+          </div>
+          <div class="app__mockup">
+            <figure class="app__mockup-img app__mockup-img-monitor"></figure>
+          </div>
+        </div>
+      </article>
+      <article class="app--blue">
+        <div class="app__container">
+          <div class="app__text flex flex-col gap--lg">
+            <div class="flex ai-c gap--sm">
+              <img class="icon--md" src="images/icons/icon_alerts.svg" alt="">
+              <h2 class="app__subheading">Receive Notifications & Alerts</h2>
+            </div>
+            <h3 class="app__heading">Set up notifications and your Minipod will provide vital event alerts.</h3>
+            <p class="app__body--light">We understand how important it is to stay up to date with everything
+              important
+              that occurs with your Minipod and your miners. <span class="text--emphasis text--light-blue">Receive
+                simple and clear emails</span> when such events happen.
+            </p>
+            <a href="M300" class="btn btn--primary btn--white">Products <svg class="btn__chevron" width="13" height="12"
+                viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.49 6L7.5 6" />
+                <path d="M2.5 1L7.95455 6L2.5 11" />
+              </svg>
+            </a>
+          </div>
+          <div class="app__mockup">
+            <figure class="app__mockup-img app__mockup-img-alerts"></figure>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="testimonials">
+      <div class="container container--sm flex gap--md ai-end">
+        <svg class="testimonials__icon" width="88" height="81" viewBox="0 0 88 81" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g class="testimonials__chat-bubble">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M33.0207 0.523521C30.1603 0.523521 27.8414 2.84236 27.8414 5.7028L27.8414 16.0614C27.8414 18.9218 30.1603 21.2407 33.0207 21.2407L53.7379 21.2407C56.5983 21.2407 58.9171 18.9218 58.9171 16.0614V5.70281C58.9171 2.84237 56.5983 0.523521 53.7379 0.523521L33.0207 0.523521ZM48.5587 21.2408H39.9265L42.9163 24.8286C43.6065 25.6568 44.8786 25.6568 45.5689 24.8286L48.5587 21.2408Z"
+              fill="#307FE2" />
+            <path d="M34.7472 7.42889L52.0115 7.42889" stroke="#F0F7FF" stroke-width="3" stroke-linecap="round" />
+            <path d="M34.7472 14.3349L45.1058 14.3349" stroke="#F0F7FF" stroke-width="3" stroke-linecap="round" />
+            <path d="M50.2849 14.3349H52.0114" stroke="#F0F7FF" stroke-width="3" stroke-linecap="round" />
+          </g>
+          <g class="testimonials__left-person">
+            <circle cx="28" cy="44" r="6" fill="#CCE3FF" />
+            <path
+              d="M18 64C18 58.4772 22.4772 54 28 54C33.5228 54 38 58.4772 38 64V70.6667C38 72.5076 36.5076 74 34.6667 74H21.3333C19.4924 74 18 72.5076 18 70.6667V64Z"
+              fill="#CCE3FF" />
+          </g>
+          <g class="testimonials__right-person">
+            <circle cx="60" cy="44" r="6" fill="#CCE3FF" />
+            <path
+              d="M50 64C50 58.4772 54.4772 54 60 54C65.5228 54 70 58.4772 70 64V70.6667C70 72.5076 68.5076 74 66.6667 74H53.3333C51.4924 74 50 72.5076 50 70.6667V64Z"
+              fill="#CCE3FF" />
+          </g>
+          <circle cx="44" cy="38" r="8" fill="#307FE2" />
+          <path
+            d="M32 62C32 55.3726 37.3726 50 44 50C50.6274 50 56 55.3726 56 62V70C56 72.2091 54.2091 74 52 74H36C33.7909 74 32 72.2091 32 70V62Z"
+            fill="#307FE2" />
+        </svg>
+        <div class="flex flex-col">
+          <h2 class="testimonials__subheading">Customer Testimonials</h2>
+          <h3 class="testimonials__heading">What our clients say about us</h3>
+        </div>
+      </div>
+      <ul onmouseenter="showChatBubble()" onmouseleave="hideChatBubble()" class="testimonials__list">
+        <li class="testimonials__list-item">
+          <p class="list-item__body">
+            “Digital Shovel lets us focus more on acquisitions while they help us manage the day to day operations.”
+          </p>
+        </li>
+        <li class="testimonials__list-item">
+          <p class="list-item__body">
+            “I can just set it and let Digital Shovel do all the work while I sit back and collect.”
+          </p>
+        </li>
+        <li class="testimonials__list-item">
+          <p class="list-item__body">
+            “With all the security and low power cost, this was a no brainer for us starting with 20 rigs.”
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__container flex flex-col gap--md">
+        <ul class="stats__list flex jc-sb">
+          <li class="stats__list-item">
+            <h2 class="list-item__heading">700+</h2>
+            <span class="list-item__subheading">Minipods Sold</span>
+          </li>
+          <li class="stats__list-item">
+            <h2 class="list-item__heading">60+</h2>
+            <span class="list-item__subheading">Reoccuring Clients</span>
+          </li>
+          <li class="stats__list-item">
+            <h2 class="list-item__heading">5+</h2>
+            <span class="list-item__subheading">Years of Experience</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="income">
+      <div class="container flex flex-col ai-c jc-c text--center gap--md">
+        <svg class="income__img desktop" width="1029" height="442" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="income__cable"
+            d="M.5 113c96.483 0 62.765 34.503 164.677 34.503M824.5 143.5c76.5 0 120.776-4.92 106.5 65.202-14.998 73.668 76 42.971 93 102.971 17 60-31 113-107 113H725.211"
+            stroke="#CCE3FF" stroke-width="3" stroke-dasharray="5 5" />
+          <path class="income__cable-in-between" d="M264.038 144.57h475.796" stroke="#CCE3FF" stroke-width="3"
+            stroke-miterlimit="10" />
+          <path class="income__arrow-left" d="m326.845 136.03 8.381 8.41-8.594 8.63" stroke="#2A7DE1" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path class="income__arrow-right" d="m661.457 136.2 8.381 8.41-8.594 8.63" stroke="#2A7DE1" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <g class="income__power">
+            <path class="income__power-text"
+              d="M181.405 129v-11.636h4.364c.894 0 1.644.166 2.25.5a3.32 3.32 0 0 1 1.38 1.375c.315.579.472 1.238.472 1.977 0 .746-.157 1.409-.472 1.989a3.365 3.365 0 0 1-1.392 1.369c-.613.329-1.369.494-2.267.494h-2.892v-1.733h2.608c.523 0 .951-.091 1.284-.273a1.71 1.71 0 0 0 .739-.75c.163-.318.244-.683.244-1.096 0-.413-.081-.777-.244-1.091a1.66 1.66 0 0 0-.744-.733c-.334-.178-.764-.267-1.29-.267h-1.932V129h-2.108Zm13.248.17c-.852 0-1.591-.187-2.216-.562a3.825 3.825 0 0 1-1.455-1.574c-.341-.674-.511-1.462-.511-2.364 0-.901.17-1.691.511-2.369a3.814 3.814 0 0 1 1.455-1.579c.625-.375 1.364-.563 2.216-.563.852 0 1.591.188 2.216.563a3.774 3.774 0 0 1 1.449 1.579c.344.678.517 1.468.517 2.369 0 .902-.173 1.69-.517 2.364a3.785 3.785 0 0 1-1.449 1.574c-.625.375-1.364.562-2.216.562Zm.011-1.647c.462 0 .849-.127 1.159-.381.311-.258.542-.602.693-1.034.156-.432.233-.913.233-1.443 0-.534-.077-1.017-.233-1.449-.151-.436-.382-.782-.693-1.04-.31-.257-.697-.386-1.159-.386-.473 0-.867.129-1.182.386-.31.258-.543.604-.699 1.04a4.37 4.37 0 0 0-.227 1.449c0 .53.076 1.011.227 1.443.156.432.389.776.699 1.034.315.254.709.381 1.182.381Zm6.828 1.477-2.466-8.727h2.096l1.534 6.136h.08l1.568-6.136h2.074l1.568 6.102h.085l1.512-6.102h2.102L209.173 129h-2.142l-1.636-5.898h-.119L203.639 129h-2.147Zm14.563.17c-.875 0-1.631-.181-2.267-.545a3.689 3.689 0 0 1-1.461-1.557c-.341-.674-.511-1.468-.511-2.38 0-.898.17-1.686.511-2.364a3.867 3.867 0 0 1 1.444-1.591c.617-.383 1.342-.574 2.176-.574.538 0 1.045.087 1.522.261.481.171.906.436 1.273.796.371.36.663.818.875 1.375.212.553.318 1.212.318 1.977v.631h-7.153v-1.387h5.182a2.214 2.214 0 0 0-.256-1.051c-.167-.31-.4-.555-.699-.733a1.963 1.963 0 0 0-1.034-.267c-.42 0-.79.103-1.108.307a2.114 2.114 0 0 0-.744.796 2.29 2.29 0 0 0-.267 1.074v1.21c0 .507.093.943.278 1.307.186.359.445.636.779.829.333.189.723.284 1.17.284.299 0 .57-.041.813-.125.242-.087.452-.214.63-.381.178-.166.313-.373.404-.619l1.92.216a2.991 2.991 0 0 1-.693 1.33 3.385 3.385 0 0 1-1.296.875c-.526.204-1.128.306-1.806.306Zm4.98-.17v-8.727h1.995v1.454h.091c.159-.504.431-.892.818-1.165.39-.276.835-.414 1.335-.414.114 0 .241.005.381.017.144.007.263.021.358.04v1.892a2.13 2.13 0 0 0-.415-.08 3.906 3.906 0 0 0-.54-.04c-.375 0-.712.082-1.011.245a1.78 1.78 0 0 0-.699.664 1.869 1.869 0 0 0-.256.983V129h-2.057Zm15.448-8.438a1.553 1.553 0 0 0-.671-1.159c-.39-.276-.898-.414-1.523-.414-.439 0-.816.066-1.13.199-.315.132-.555.312-.722.539a1.314 1.314 0 0 0-.255.779c0 .242.054.452.164.63.114.178.267.33.461.455.193.121.407.223.642.307.234.083.471.153.71.21l1.091.273c.439.102.861.24 1.267.414.409.175.774.394 1.096.66.326.265.584.585.773.96.189.375.284.814.284 1.318 0 .682-.174 1.282-.523 1.801-.348.515-.852.919-1.511 1.21-.655.288-1.449.432-2.381.432-.905 0-1.691-.14-2.358-.42-.662-.281-1.181-.69-1.556-1.228-.372-.537-.572-1.193-.603-1.966h2.074c.03.406.155.743.375 1.012s.506.47.858.602a3.39 3.39 0 0 0 1.193.199c.459 0 .86-.068 1.205-.205.348-.14.621-.333.818-.579.197-.25.297-.542.301-.875-.004-.303-.093-.553-.267-.75-.174-.201-.418-.368-.733-.5a7.061 7.061 0 0 0-1.091-.364l-1.324-.341c-.958-.246-1.715-.619-2.272-1.119-.553-.504-.83-1.172-.83-2.006 0-.685.186-1.286.557-1.801.375-.515.884-.915 1.528-1.199.644-.288 1.373-.431 2.188-.431.826 0 1.549.143 2.17.431.625.284 1.116.68 1.472 1.188.356.504.54 1.083.551 1.738h-2.028Zm8.898 4.768v-5.057h2.057V129h-1.995v-1.551h-.09a2.63 2.63 0 0 1-.972 1.199c-.447.31-.998.466-1.653.466-.572 0-1.078-.127-1.517-.381a2.648 2.648 0 0 1-1.023-1.119c-.246-.493-.37-1.087-.37-1.784v-5.557h2.057v5.238c0 .553.152.993.455 1.319.303.325.701.488 1.193.488.303 0 .597-.074.881-.221a1.8 1.8 0 0 0 .699-.659c.185-.296.278-.665.278-1.108Zm3.532 6.943v-12h2.023v1.443h.119c.106-.212.256-.438.449-.676.193-.243.454-.449.784-.62.329-.174.75-.261 1.261-.261.674 0 1.282.172 1.824.517.546.341.977.847 1.296 1.517.322.667.483 1.485.483 2.455 0 .958-.158 1.772-.472 2.443-.314.67-.743 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.244-.25a2.519 2.519 0 0 1-.796-.602 3.922 3.922 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.079 1.059.239 1.483.162.425.395.756.698.995.307.234.678.352 1.114.352.455 0 .835-.121 1.142-.364.307-.246.538-.581.693-1.005.159-.428.239-.915.239-1.461a4.16 4.16 0 0 0-.233-1.443c-.155-.42-.386-.75-.693-.988-.307-.239-.69-.358-1.148-.358-.439 0-.812.115-1.119.346-.307.231-.54.555-.699.972-.155.416-.233.907-.233 1.471Zm7.343 7.637v-12h2.023v1.443h.119c.106-.212.256-.438.449-.676.193-.243.454-.449.784-.62.329-.174.75-.261 1.261-.261.674 0 1.282.172 1.824.517.546.341.977.847 1.296 1.517.322.667.483 1.485.483 2.455 0 .958-.158 1.772-.472 2.443-.314.67-.743 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.244-.25a2.519 2.519 0 0 1-.796-.602 3.922 3.922 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.079 1.059.239 1.483.162.425.395.756.698.995.307.234.678.352 1.114.352.455 0 .835-.121 1.142-.364.307-.246.538-.581.693-1.005.159-.428.239-.915.239-1.461a4.16 4.16 0 0 0-.233-1.443c-.155-.42-.386-.75-.693-.988-.307-.239-.69-.358-1.148-.358-.439 0-.812.115-1.119.346-.307.231-.54.555-.699.972-.155.416-.233.907-.233 1.471Zm9.4-7.272V129h-2.057v-11.636h2.057Zm2.753 14.909c-.28 0-.54-.023-.778-.068a2.892 2.892 0 0 1-.563-.148l.478-1.602c.299.087.566.128.801.125a.983.983 0 0 0 .619-.222c.182-.14.335-.375.46-.705l.176-.471-3.164-8.909h2.181l2.012 6.591h.091l2.017-6.591h2.187l-3.494 9.784a3.913 3.913 0 0 1-.648 1.187 2.635 2.635 0 0 1-.988.762c-.387.178-.849.267-1.387.267Z"
+              fill="#2163B3" />
+            <path
+              d="M280.772 99h-101.96c-5.523 0-10 4.477-10 10v70.78c0 5.523 4.477 10 10 10h101.96c5.523 0 10-4.477 10-10V109c0-5.523-4.477-10-10-10Z"
+              fill="#CCE3FF" />
+            <path class="income__power-large-icon"
+              d="m270.992 139.26-11.08 23.01c-.38.8-1.57.61-1.69-.27l-1.94-14.45a.889.889 0 0 0-1.28-.68l-4.27 2.13c-.76.38-1.57-.42-1.2-1.19l11.08-23.01c.38-.8 1.57-.61 1.69.27l1.94 14.45c.08.61.73.95 1.28.68l4.27-2.13c.76-.38 1.57.42 1.2 1.19Z"
+              fill="#307FE2" />
+            <path class="income__power-small-icon"
+              d="m271.172 129.94-2.77 5.75c-.1.2-.39.15-.42-.07l-.49-3.61a.222.222 0 0 0-.32-.17l-1.07.53c-.19.09-.39-.1-.3-.3l2.77-5.75c.1-.2.39-.15.42.07l.49 3.61c.02.15.18.24.32.17l1.07-.53c.19-.09.39.1.3.3ZM254.832 155.28l-2.77 5.75c-.1.2-.39.15-.42-.07l-.49-3.61a.222.222 0 0 0-.32-.17l-1.07.53c-.19.09-.39-.1-.3-.3l2.77-5.75c.1-.2.39-.15.42.07l.49 3.61c.02.15.18.24.32.17l1.07-.53c.19-.09.39.1.3.3Z"
+              fill="#2163B3" />
+            <path
+              d="M208.562 148.98v16.25c0 1.93-1.8 3.39-3.66 2.93-3.29-.82-6.33-2.27-8.98-4.22l-3.02 3.01c-.82.82-1.89 1.23-2.96 1.23s-2.15-.41-2.97-1.23a4.189 4.189 0 0 1 0-5.93l3.09-3.09a25.522 25.522 0 0 1-3.78-8.27c-.48-1.88.99-3.68 2.92-3.68h16.36c1.66 0 3 1.34 3 3ZM235.222 166.95c-.82.82-1.89 1.23-2.96 1.23s-2.15-.41-2.97-1.23l-3.05-3.04a25.403 25.403 0 0 1-9.02 4.25c-1.86.46-3.66-1-3.66-2.93v-16.25c0-1.66 1.34-3 3-3h16.36c1.93 0 3.4 1.8 2.92 3.68a25.56 25.56 0 0 1-3.75 8.23l3.13 3.13a4.189 4.189 0 0 1 0 5.93Z"
+              fill="#307FE2" />
+            <path
+              d="M204.992 161.47V151.2c0-1.03-.83-1.86-1.86-1.86h-10.2c-1.19 0-2.11 1.11-1.83 2.27.47 1.97 1.46 4.44 4.42 7.4s5.18 3.79 7.19 4.28c1.16.29 2.28-.62 2.28-1.82ZM217.402 161.47V151.2c0-1.03.83-1.86 1.86-1.86h10.2c1.19 0 2.11 1.11 1.83 2.27-.47 1.97-1.46 4.44-4.42 7.4s-5.18 3.79-7.19 4.28c-1.16.29-2.28-.62-2.28-1.82Z"
+              fill="#2163B3" />
+            <path
+              d="M235.912 137.32c.45 1.87-1.02 3.66-2.94 3.66h-16.41c-1.66 0-3-1.35-3-3v-16.52c0-1.93 1.8-3.39 3.67-2.93 3.26.81 6.26 2.23 8.89 4.16l3.17-3.17c.82-.82 1.89-1.23 2.97-1.23 1.08 0 2.14.41 2.96 1.23a4.189 4.189 0 0 1 0 5.93l-3.22 3.23c1.81 2.57 3.15 5.49 3.91 8.64ZM208.562 121.46v16.52c0 1.65-1.34 3-3 3h-16.41c-1.92 0-3.39-1.79-2.94-3.66.76-3.17 2.12-6.1 3.94-8.69l-3.18-3.18a4.189 4.189 0 0 1 0-5.93c.82-.82 1.89-1.23 2.97-1.23 1.08 0 2.14.41 2.96 1.23l3.14 3.14c2.62-1.91 5.61-3.33 8.85-4.13 1.87-.46 3.67 1 3.67 2.93Z"
+              fill="#307FE2" />
+            <path
+              d="M204.992 125.11v10.27c0 1.03-.83 1.86-1.86 1.86h-10.2c-1.19 0-2.11-1.11-1.83-2.27.47-1.97 1.46-4.44 4.42-7.4s5.18-3.79 7.19-4.28c1.16-.29 2.28.62 2.28 1.82ZM217.402 125.11v10.27c0 1.03.83 1.86 1.86 1.86h10.2c1.19 0 2.11-1.11 1.83-2.27-.47-1.97-1.46-4.44-4.42-7.4s-5.18-3.79-7.19-4.28c-1.16-.29-2.28.62-2.28 1.82Z"
+              fill="#2163B3" />
+            <path
+              d="M190.082 124.78a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM232.102 124.78a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM232.102 165.99a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM190.082 165.99a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3Z"
+              fill="#CCE3FF" />
+          </g>
+          <g class="income__minipod">
+            <path class="income__minipod-text"
+              d="M470.125 77.364h2.579l3.455 8.431h.136l3.455-8.431h2.579V89h-2.022v-7.994h-.108l-3.216 7.96h-1.512l-3.215-7.977h-.108V89h-2.023V77.364ZM483.894 89v-8.727h2.057V89h-2.057Zm1.034-9.966a1.2 1.2 0 0 1-.841-.324 1.043 1.043 0 0 1-.352-.79c0-.31.117-.573.352-.79.235-.219.515-.329.841-.329.33 0 .61.11.841.33.235.216.352.479.352.79 0 .306-.117.57-.352.79a1.186 1.186 0 0 1-.841.323Zm4.555 4.852V89h-2.057v-8.727h1.966v1.483h.102c.201-.489.521-.877.96-1.165.443-.288.991-.432 1.642-.432.603 0 1.127.129 1.574.386.451.258.799.631 1.046 1.12.25.488.373 1.081.369 1.778V89h-2.057v-5.239c0-.583-.151-1.04-.454-1.369-.3-.33-.714-.494-1.245-.494-.36 0-.68.08-.96.238a1.65 1.65 0 0 0-.653.677c-.156.295-.233.653-.233 1.073ZM496.536 89v-8.727h2.057V89h-2.057Zm1.034-9.966a1.2 1.2 0 0 1-.841-.324 1.043 1.043 0 0 1-.352-.79c0-.31.117-.573.352-.79.235-.219.515-.329.841-.329.329 0 .61.11.841.33.235.216.352.479.352.79 0 .306-.117.57-.352.79a1.188 1.188 0 0 1-.841.323Zm2.498 13.239v-12h2.022v1.443h.12c.106-.212.255-.438.449-.676.193-.243.454-.45.784-.62.329-.174.75-.26 1.261-.26.674 0 1.282.171 1.824.516.545.341.977.847 1.295 1.517.322.667.483 1.485.483 2.455 0 .958-.157 1.773-.471 2.443-.315.67-.743 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.245-.25a2.538 2.538 0 0 1-.795-.602 3.903 3.903 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.079 1.06.238 1.483.163.425.396.756.699.995.307.234.678.352 1.114.352.454 0 .835-.121 1.142-.364.307-.246.538-.581.693-1.005.159-.428.239-.915.239-1.46 0-.542-.078-1.023-.233-1.444-.156-.42-.387-.75-.693-.989-.307-.238-.69-.357-1.148-.357-.44 0-.813.115-1.119.346-.307.231-.54.555-.699.972-.156.416-.233.907-.233 1.471Zm11.15 4.535c-.853 0-1.591-.188-2.216-.563a3.823 3.823 0 0 1-1.455-1.574c-.341-.674-.511-1.462-.511-2.364 0-.901.17-1.69.511-2.369a3.815 3.815 0 0 1 1.455-1.58c.625-.374 1.363-.562 2.216-.562.852 0 1.59.188 2.215.563a3.775 3.775 0 0 1 1.449 1.58c.345.677.517 1.467.517 2.368 0 .902-.172 1.69-.517 2.364a3.783 3.783 0 0 1-1.449 1.574c-.625.375-1.363.563-2.215.563Zm.011-1.648c.462 0 .848-.127 1.159-.381.311-.257.542-.602.693-1.034.155-.432.233-.913.233-1.443 0-.534-.078-1.017-.233-1.45-.151-.435-.382-.781-.693-1.039-.311-.257-.697-.386-1.159-.386-.474 0-.868.129-1.182.386-.311.258-.543.604-.699 1.04a4.369 4.369 0 0 0-.227 1.449c0 .53.076 1.011.227 1.443.156.432.388.776.699 1.034.314.254.708.38 1.182.38Zm8.515 1.63a3.3 3.3 0 0 1-1.841-.528c-.542-.352-.97-.864-1.284-1.534-.315-.67-.472-1.485-.472-2.443 0-.97.159-1.788.477-2.455.322-.67.756-1.176 1.302-1.517a3.34 3.34 0 0 1 1.823-.517c.512 0 .932.087 1.262.261.329.17.591.377.784.62.193.238.343.464.449.676h.085v-4.352h2.062V89h-2.022v-1.375h-.125c-.106.212-.26.438-.461.676-.2.235-.465.436-.795.602-.33.167-.744.25-1.244.25Zm.574-1.687c.435 0 .806-.117 1.113-.352.307-.239.54-.57.699-.995.159-.424.239-.918.239-1.483 0-.564-.08-1.055-.239-1.471-.155-.417-.386-.74-.693-.972-.303-.23-.676-.346-1.119-.346-.459 0-.841.119-1.148.358-.307.238-.538.568-.693.988-.156.42-.233.902-.233 1.443 0 .546.077 1.033.233 1.46.159.425.392.76.699 1.006.31.243.691.364 1.142.364Z"
+              fill="#2163B3" />
+            <path
+              d="M598.41 41H396.76c-5.523 0-10 4.477-10 10v185.23c0 5.523 4.477 10 10 10h201.65c5.523 0 10-4.477 10-10V51c0-5.523-4.477-10-10-10Z"
+              fill="#CCE3FF" />
+            <path d="M426.4 102.55h142.36v7.85c0 1.1-.74 2-1.645 2H428.046c-.905 0-1.646-.9-1.646-2v-7.85Z"
+              fill="#2163B3" />
+            <path
+              d="M568.76 102.55H426.4l6.524-29.56c.486-2.19 2.115-3.7 3.974-3.7h120.978c1.843 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+              fill="#307FE2" />
+            <path d="M503.685 76h-19.161v6.95h6.392v-3.47h12.769v3.47h6.384V76h-6.384Z" fill="#2163B3" />
+            <path
+              d="M499.786 81.22h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .706-.423.706-.945v-5.069c0-.522-.316-.945-.706-.945Z"
+              fill="#2163B3" />
+            <path
+              d="m503.685 88.766-6.477 3.527-6.292-3.433v-4.17h-6.392v5.627h.029l12.655 6.893 12.833-6.988h.028V84.69h-6.384v4.076ZM426.4 155.32h142.36v7.85c0 1.1-.74 2-1.645 2H428.046c-.905 0-1.646-.9-1.646-2v-7.85Z"
+              fill="#2163B3" />
+            <path
+              d="M568.76 155.32H426.4l6.524-29.56c.486-2.19 2.115-3.7 3.974-3.7h120.978c1.843 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+              fill="#307FE2" />
+            <path d="M503.685 128h-19.161v6.95h6.392v-3.47h12.769v3.47h6.384V128h-6.384Z" fill="#2163B3" />
+            <path
+              d="M499.786 133.22h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .706-.423.706-.945v-5.069c0-.522-.316-.945-.706-.945Z"
+              fill="#2163B3" />
+            <path
+              d="m503.685 140.766-6.477 3.527-6.292-3.433v-4.17h-6.392v5.627h.029l12.655 6.893 12.833-6.988h.028v-5.532h-6.384v4.076ZM426.4 208.1h142.36v7.85c0 1.1-.74 2-1.645 2H428.046c-.905 0-1.646-.9-1.646-2v-7.85Z"
+              fill="#2163B3" />
+            <path
+              d="M568.76 208.1H426.4l6.524-29.56c.486-2.19 2.115-3.7 3.974-3.7h120.978c1.843 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+              fill="#307FE2" />
+            <path d="M503.685 180h-19.161v6.95h6.392v-3.47h12.769v3.47h6.384V180h-6.384Z" fill="#2163B3" />
+            <path
+              d="M499.786 185.22h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .706-.423.706-.945v-5.069c0-.522-.316-.945-.706-.945Z"
+              fill="#2163B3" />
+            <path
+              d="m503.685 192.766-6.477 3.527-6.292-3.433v-4.17h-6.392v5.627h.029l12.655 6.893 12.833-6.988h.028v-5.532h-6.384v4.076Z"
+              fill="#2163B3" />
+          </g>
+          <g class="income__wallet">
+            <path class="income__wallet-text"
+              d="M749.933 116.29h-2.125a2.666 2.666 0 0 0-.335-.926 2.508 2.508 0 0 0-.608-.694 2.55 2.55 0 0 0-.83-.426 3.25 3.25 0 0 0-.994-.147c-.633 0-1.193.159-1.682.477-.489.314-.871.776-1.148 1.386-.276.606-.415 1.347-.415 2.222 0 .89.139 1.64.415 2.25.281.606.663 1.064 1.148 1.375.489.307 1.047.46 1.676.46.349 0 .674-.045.977-.136.307-.095.582-.233.824-.415a2.44 2.44 0 0 0 .62-.671c.17-.265.287-.568.352-.909l2.125.012a4.591 4.591 0 0 1-.517 1.557 4.613 4.613 0 0 1-1.029 1.284c-.424.367-.92.655-1.488.863a5.542 5.542 0 0 1-1.892.307c-1.023 0-1.936-.237-2.739-.71-.803-.474-1.436-1.157-1.898-2.051-.462-.894-.693-1.966-.693-3.216 0-1.254.233-2.326.699-3.216.466-.894 1.1-1.578 1.903-2.051.803-.474 1.713-.71 2.728-.71.647 0 1.25.09 1.806.272a4.63 4.63 0 0 1 1.489.801c.436.349.794.777 1.074 1.284.284.504.47 1.08.557 1.728Zm1.199 7.71v-8.727h1.995v1.454h.091c.159-.504.431-.892.818-1.165.39-.276.835-.414 1.335-.414.114 0 .24.005.381.017.144.007.263.021.358.04v1.892a2.147 2.147 0 0 0-.415-.08 3.906 3.906 0 0 0-.54-.04c-.375 0-.712.082-1.011.245a1.78 1.78 0 0 0-.699.664 1.869 1.869 0 0 0-.256.983V124h-2.057Zm7.248 3.273c-.28 0-.54-.023-.778-.068a2.892 2.892 0 0 1-.563-.148l.477-1.602c.3.087.567.128.802.125a.985.985 0 0 0 .619-.222c.182-.14.335-.375.46-.705l.176-.471-3.165-8.909h2.182l2.012 6.591h.091l2.017-6.591h2.187l-3.494 9.784a3.913 3.913 0 0 1-.648 1.187 2.63 2.63 0 0 1-.989.762c-.386.178-.848.267-1.386.267Zm7.3 0v-12h2.023v1.443h.119a3.83 3.83 0 0 1 .449-.676c.194-.243.455-.449.784-.62.33-.174.75-.261 1.262-.261.674 0 1.282.172 1.824.517.545.341.977.847 1.295 1.517.322.667.483 1.485.483 2.455 0 .958-.157 1.772-.472 2.443-.314.67-.742 1.182-1.284 1.534a3.302 3.302 0 0 1-1.841.528c-.5 0-.914-.083-1.244-.25a2.514 2.514 0 0 1-.795-.602 3.932 3.932 0 0 1-.461-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.08 1.059.239 1.483.163.425.396.756.699.995.307.234.678.352 1.114.352.454 0 .835-.121 1.142-.364.306-.246.538-.581.693-1.005.159-.428.238-.915.238-1.461a4.16 4.16 0 0 0-.232-1.443c-.156-.42-.387-.75-.694-.988-.306-.239-.689-.358-1.147-.358-.44 0-.813.115-1.12.346-.307.231-.539.555-.699.972-.155.416-.233.907-.233 1.471Zm11.701-4.363v1.591h-5.017v-1.591h5.017Zm-3.778-2.091h2.057v8.193c0 .277.041.489.125.636a.676.676 0 0 0 .341.296c.14.053.295.079.466.079.128 0 .246-.009.352-.028.11-.019.193-.036.25-.051l.346 1.608a4.662 4.662 0 0 1-.471.125 3.86 3.86 0 0 1-.739.079 3.348 3.348 0 0 1-1.392-.233 2.169 2.169 0 0 1-.983-.806c-.238-.364-.356-.819-.352-1.364v-8.534Zm8.572 10.988c-.853 0-1.591-.187-2.216-.562a3.825 3.825 0 0 1-1.455-1.574c-.341-.674-.511-1.462-.511-2.364 0-.901.17-1.691.511-2.369a3.814 3.814 0 0 1 1.455-1.579c.625-.375 1.363-.563 2.216-.563.852 0 1.591.188 2.216.563a3.772 3.772 0 0 1 1.448 1.579c.345.678.517 1.468.517 2.369 0 .902-.172 1.69-.517 2.364a3.783 3.783 0 0 1-1.448 1.574c-.625.375-1.364.562-2.216.562Zm.011-1.647c.462 0 .848-.127 1.159-.381.311-.258.542-.602.693-1.034.156-.432.233-.913.233-1.443 0-.534-.077-1.017-.233-1.449-.151-.436-.382-.782-.693-1.04-.311-.257-.697-.386-1.159-.386-.473 0-.867.129-1.182.386-.31.258-.543.604-.699 1.04a4.37 4.37 0 0 0-.227 1.449c0 .53.076 1.011.227 1.443.156.432.389.776.699 1.034.315.254.709.381 1.182.381ZM795.348 124l-3.284-11.636h2.267l2.096 8.551h.108l2.239-8.551h2.062l2.245 8.556h.102l2.097-8.556h2.267L804.262 124h-2.079l-2.33-8.165h-.091L797.427 124h-2.079Zm14.55.176a3.639 3.639 0 0 1-1.494-.295 2.443 2.443 0 0 1-1.046-.887c-.254-.39-.38-.871-.38-1.443 0-.492.091-.899.272-1.221.182-.322.43-.58.745-.773a3.767 3.767 0 0 1 1.062-.438 8.628 8.628 0 0 1 1.233-.221c.511-.053.926-.101 1.244-.142.319-.046.55-.114.694-.205.147-.095.221-.24.221-.437v-.034c0-.428-.127-.76-.38-.995-.254-.235-.62-.352-1.097-.352-.504 0-.903.11-1.199.329-.292.22-.489.48-.591.779l-1.92-.273c.151-.53.401-.973.75-1.329.348-.36.774-.629 1.278-.807a4.89 4.89 0 0 1 1.671-.273c.42 0 .839.049 1.255.148.417.098.798.261 1.142.488.345.224.621.529.83.915.212.387.318.87.318 1.449V124h-1.977v-1.199h-.068a2.51 2.51 0 0 1-.529.682 2.552 2.552 0 0 1-.846.506c-.338.125-.733.187-1.188.187Zm.534-1.511c.413 0 .771-.082 1.074-.245a1.8 1.8 0 0 0 .699-.659c.167-.272.25-.57.25-.892v-1.028a.98.98 0 0 1-.33.148 4.739 4.739 0 0 1-.511.119c-.189.034-.377.064-.563.091l-.482.068c-.307.042-.582.11-.824.205a1.36 1.36 0 0 0-.574.397c-.14.167-.21.383-.21.648 0 .379.138.665.414.858.277.193.629.29 1.057.29Zm7.559-10.301V124h-2.057v-11.636h2.057Zm3.532 0V124h-2.057v-11.636h2.057Zm5.339 11.806c-.875 0-1.631-.181-2.267-.545a3.689 3.689 0 0 1-1.461-1.557c-.341-.674-.511-1.468-.511-2.38 0-.898.17-1.686.511-2.364a3.872 3.872 0 0 1 1.443-1.591c.618-.383 1.343-.574 2.177-.574a4.41 4.41 0 0 1 1.522.261c.481.171.906.436 1.273.796.371.36.663.818.875 1.375.212.553.318 1.212.318 1.977v.631h-7.153v-1.387h5.182a2.214 2.214 0 0 0-.256-1.051c-.167-.31-.4-.555-.699-.733a1.963 1.963 0 0 0-1.034-.267c-.42 0-.79.103-1.108.307a2.114 2.114 0 0 0-.744.796 2.278 2.278 0 0 0-.267 1.074v1.21c0 .507.093.943.278 1.307.186.359.445.636.779.829.333.189.723.284 1.17.284.299 0 .57-.041.812-.125.243-.087.453-.214.631-.381.178-.166.313-.373.404-.619l1.92.216a2.991 2.991 0 0 1-.693 1.33 3.385 3.385 0 0 1-1.296.875c-.526.204-1.128.306-1.806.306Zm9.338-8.897v1.591h-5.017v-1.591h5.017Zm-3.778-2.091h2.057v8.193c0 .277.041.489.125.636.087.144.2.243.341.296.14.053.295.079.465.079.129 0 .247-.009.353-.028.11-.019.193-.036.25-.051l.346 1.608a4.662 4.662 0 0 1-.471.125 3.86 3.86 0 0 1-.739.079 3.348 3.348 0 0 1-1.392-.233 2.169 2.169 0 0 1-.983-.806c-.239-.364-.356-.819-.352-1.364v-8.534Z"
+              fill="#2163B3" />
+            <g class="income__wallet-coin">
+              <path
+                d="M786.324 118.9c17.646 0 31.95-14.305 31.95-31.95S803.97 55 786.324 55c-17.645 0-31.95 14.305-31.95 31.95s14.305 31.95 31.95 31.95Z"
+                fill="#2163B3" />
+              <path
+                d="M786.324 112.22c13.956 0 25.27-11.314 25.27-25.27s-11.314-25.27-25.27-25.27-25.27 11.314-25.27 25.27 11.314 25.27 25.27 25.27Z"
+                fill="#307FE2" />
+              <path
+                d="M795.294 85.7c1.86-.95 3.03-2.62 2.76-5.4-.37-3.8-3.65-5.08-7.8-5.44v-5.27h-3.21v5.13c-.85 0-1.71.02-2.57.03v-5.17h-3.21v5.27c-.7.01-1.38.03-2.05.03v-.02h-4.43v3.43s2.37-.04 2.33 0c1.3 0 1.73.76 1.85 1.41v14.45c-.06.41-.3 1.06-1.21 1.06.04.04-2.34 0-2.34 0l-.64 3.83h4.18c.78 0 1.54.01 2.3.02v5.33h3.21v-5.28c.88.02 1.73.03 2.57.02v5.25h3.21v-5.32c5.4-.31 9.18-1.67 9.65-6.74.38-4.08-1.54-5.9-4.61-6.64l.01.02Zm-10.75-7.17c1.81 0 7.51-.58 7.51 3.21 0 3.63-5.7 3.2-7.51 3.2v-6.41Zm0 16.71v-7.07c2.18 0 9.01-.63 9.01 3.53 0 3.99-6.83 3.53-9.01 3.53v.01Z"
+                fill="#fff" />
+            </g>
+            <path
+              d="M839.304 97.59h-101.96c-5.523 0-10 4.477-10 10v70.78c0 5.523 4.477 10 10 10h101.96c5.523 0 10-4.477 10-10v-70.78c0-5.523-4.477-10-10-10Z"
+              fill="#CCE3FF" />
+            <path d="M816.864 133.4h32.33v19.15h-32.33c-1.66 0-3-1.34-3-3V136.4c0-1.66 1.34-3 3-3Z" fill="#307FE2" />
+            <path d="M823.754 147.75a4.47 4.47 0 1 0 0-8.94 4.47 4.47 0 0 0 0 8.94Z" fill="#2163B3" />
+          </g>
+          <path class="income__plug" fill-rule="evenodd" clip-rule="evenodd"
+            d="M721.428 407.096h12.491c5.522 0 10 4.477 10 10V432c0 5.523-4.478 10-10 10h-12.491v-7.632h-14.214v-6.015h14.214v-7.618h-14.209v-5.996h14.209v-7.643Z"
+            fill="#CCE3FF" />
+        </svg>
+        <svg class="income__img mobile" width="396" height="977" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M155.311.215v157.204m49.169 586.146H394.5V964.25h-89.497" stroke="#CCE3FF" stroke-width="3"
+            stroke-dasharray="5 5" />
+          <path class="income__plug-mobile" fill-rule="evenodd" clip-rule="evenodd"
+            d="M304.277 953.176h4.993c5.523 0 10 4.477 10 10v3.267c0 5.523-4.477 10-10 10h-4.993v-5.087h-9.475v-4.01h9.475v-5.078h-9.473v-3.998h9.473v-5.094Z"
+            fill="#CCE3FF" />
+          <path d="M155.5 205.26v558.62" stroke="#CCE3FF" stroke-width="3" stroke-miterlimit="10" />
+          <path d="m164.02 597.591-8.41 9.84-8.63-10.09M163.893 285.345l-8.419 10.09-8.367-10.09" stroke="#2A7DE1"
+            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M106.649 185v-11.636h4.364c.894 0 1.644.166 2.25.5a3.32 3.32 0 0 1 1.38 1.375c.315.579.472 1.238.472 1.977 0 .746-.157 1.409-.472 1.989a3.365 3.365 0 0 1-1.392 1.369c-.613.329-1.369.494-2.267.494h-2.892v-1.733h2.608c.523 0 .951-.091 1.284-.273a1.71 1.71 0 0 0 .739-.75c.163-.318.244-.683.244-1.096 0-.413-.081-.777-.244-1.091a1.66 1.66 0 0 0-.744-.733c-.334-.178-.764-.267-1.29-.267h-1.932V185h-2.108Zm13.248.17c-.852 0-1.591-.187-2.216-.562a3.816 3.816 0 0 1-1.454-1.574c-.341-.674-.512-1.462-.512-2.364 0-.901.171-1.691.512-2.369a3.805 3.805 0 0 1 1.454-1.579c.625-.375 1.364-.563 2.216-.563.852 0 1.591.188 2.216.563a3.774 3.774 0 0 1 1.449 1.579c.344.678.517 1.468.517 2.369 0 .902-.173 1.69-.517 2.364a3.785 3.785 0 0 1-1.449 1.574c-.625.375-1.364.562-2.216.562Zm.011-1.647c.462 0 .849-.127 1.159-.381.311-.258.542-.602.694-1.034.155-.432.233-.913.233-1.443 0-.534-.078-1.017-.233-1.449-.152-.436-.383-.782-.694-1.04-.31-.257-.697-.386-1.159-.386-.473 0-.867.129-1.181.386-.311.258-.544.604-.699 1.04a4.345 4.345 0 0 0-.228 1.449c0 .53.076 1.011.228 1.443.155.432.388.776.699 1.034.314.254.708.381 1.181.381Zm6.828 1.477-2.466-8.727h2.096l1.534 6.136h.08l1.568-6.136h2.074l1.568 6.102h.085l1.512-6.102h2.102L134.417 185h-2.142l-1.636-5.898h-.119L128.883 185h-2.147Zm14.563.17c-.875 0-1.631-.181-2.267-.545a3.68 3.68 0 0 1-1.46-1.557c-.341-.674-.512-1.468-.512-2.38 0-.898.171-1.686.512-2.364a3.858 3.858 0 0 1 1.443-1.591c.617-.383 1.342-.574 2.176-.574.538 0 1.045.087 1.523.261.481.171.905.436 1.272.796.371.36.663.818.875 1.375.212.553.318 1.212.318 1.977v.631h-7.153v-1.387h5.182a2.214 2.214 0 0 0-.256-1.051 1.854 1.854 0 0 0-.699-.733 1.963 1.963 0 0 0-1.034-.267c-.42 0-.79.103-1.108.307a2.114 2.114 0 0 0-.744.796 2.29 2.29 0 0 0-.267 1.074v1.21c0 .507.093.943.278 1.307.186.359.445.636.779.829.333.189.723.284 1.17.284.299 0 .57-.041.813-.125.242-.087.452-.214.63-.381.178-.166.313-.373.404-.619l1.92.216a2.991 2.991 0 0 1-.693 1.33 3.388 3.388 0 0 1-1.295.875c-.527.204-1.129.306-1.807.306Zm4.981-.17v-8.727h1.994v1.454h.091c.159-.504.432-.892.818-1.165.39-.276.835-.414 1.335-.414.114 0 .241.005.381.017.144.007.263.021.358.04v1.892a2.13 2.13 0 0 0-.415-.08 3.906 3.906 0 0 0-.54-.04c-.375 0-.712.082-1.011.245a1.78 1.78 0 0 0-.699.664c-.17.284-.256.612-.256.983V185h-2.056Zm15.447-8.438a1.553 1.553 0 0 0-.671-1.159c-.39-.276-.897-.414-1.522-.414-.44 0-.817.066-1.131.199-.314.132-.555.312-.722.539a1.314 1.314 0 0 0-.255.779c0 .242.055.452.164.63.114.178.267.33.461.455.193.121.407.223.642.307.235.083.471.153.71.21l1.091.273c.439.102.862.24 1.267.414.409.175.774.394 1.096.66.326.265.584.585.773.96.19.375.284.814.284 1.318 0 .682-.174 1.282-.522 1.801-.349.515-.853.919-1.512 1.21-.655.288-1.449.432-2.38.432-.906 0-1.692-.14-2.358-.42-.663-.281-1.182-.69-1.557-1.228-.371-.537-.572-1.193-.603-1.966h2.074c.031.406.156.743.375 1.012.22.269.506.47.858.602a3.39 3.39 0 0 0 1.193.199c.459 0 .86-.068 1.205-.205.348-.14.621-.333.818-.579.197-.25.298-.542.301-.875-.003-.303-.092-.553-.267-.75-.174-.201-.418-.368-.733-.5a7.061 7.061 0 0 0-1.091-.364l-1.323-.341c-.959-.246-1.716-.619-2.273-1.119-.553-.504-.83-1.172-.83-2.006 0-.685.186-1.286.557-1.801.375-.515.885-.915 1.529-1.199.643-.288 1.373-.431 2.187-.431.826 0 1.549.143 2.17.431.625.284 1.116.68 1.472 1.188.356.504.54 1.083.551 1.738h-2.028Zm8.898 4.768v-5.057h2.057V185h-1.994v-1.551h-.091a2.63 2.63 0 0 1-.972 1.199c-.447.31-.998.466-1.653.466-.572 0-1.078-.127-1.517-.381a2.648 2.648 0 0 1-1.023-1.119c-.246-.493-.369-1.087-.369-1.784v-5.557h2.056v5.238c0 .553.152.993.455 1.319.303.325.701.488 1.193.488.303 0 .597-.074.881-.221a1.8 1.8 0 0 0 .699-.659c.185-.296.278-.665.278-1.108Zm3.532 6.943v-12h2.023v1.443h.119c.106-.212.256-.438.449-.676.193-.243.454-.449.784-.62.33-.174.75-.261 1.261-.261a3.32 3.32 0 0 1 1.824.517c.546.341.978.847 1.296 1.517.322.667.483 1.485.483 2.455 0 .958-.158 1.772-.472 2.443-.314.67-.742 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.244-.25a2.519 2.519 0 0 1-.796-.602 3.922 3.922 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.08 1.059.239 1.483.163.425.396.756.699.995.306.234.678.352 1.113.352.455 0 .835-.121 1.142-.364.307-.246.538-.581.693-1.005.16-.428.239-.915.239-1.461a4.16 4.16 0 0 0-.233-1.443c-.155-.42-.386-.75-.693-.988-.307-.239-.689-.358-1.148-.358-.439 0-.812.115-1.119.346-.307.231-.54.555-.699.972-.155.416-.233.907-.233 1.471Zm7.343 7.637v-12h2.023v1.443h.119c.106-.212.256-.438.449-.676.193-.243.454-.449.784-.62.33-.174.75-.261 1.261-.261a3.32 3.32 0 0 1 1.824.517c.546.341.978.847 1.296 1.517.322.667.483 1.485.483 2.455 0 .958-.158 1.772-.472 2.443-.314.67-.742 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.244-.25a2.519 2.519 0 0 1-.796-.602 3.922 3.922 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.08 1.059.239 1.483.163.425.396.756.699.995.306.234.678.352 1.113.352.455 0 .835-.121 1.142-.364.307-.246.538-.581.693-1.005.16-.428.239-.915.239-1.461a4.16 4.16 0 0 0-.233-1.443c-.155-.42-.386-.75-.693-.988-.307-.239-.689-.358-1.148-.358-.439 0-.812.115-1.119.346-.307.231-.54.555-.699.972-.155.416-.233.907-.233 1.471Zm9.4-7.272V185h-2.057v-11.636h2.057Zm2.753 14.909c-.28 0-.539-.023-.778-.068a2.912 2.912 0 0 1-.563-.148l.478-1.602c.299.087.566.128.801.125a.983.983 0 0 0 .619-.222c.182-.14.335-.375.46-.705l.176-.471-3.164-8.909h2.182l2.011 6.591H200l2.017-6.591h2.187l-3.494 9.784a3.913 3.913 0 0 1-.648 1.187 2.635 2.635 0 0 1-.988.762c-.387.178-.849.267-1.387.267Z"
+            fill="#2163B3" />
+          <path
+            d="M206.016 155h-101.96c-5.523 0-10 4.477-10 10v70.78c0 5.523 4.477 10 10 10h101.96c5.523 0 10-4.477 10-10V165c0-5.523-4.477-10-10-10Z"
+            fill="#CCE3FF" />
+          <path
+            d="m196.236 195.26-11.08 23.01c-.38.8-1.57.61-1.69-.27l-1.94-14.45a.889.889 0 0 0-1.28-.68l-4.27 2.13c-.76.38-1.57-.42-1.2-1.19l11.08-23.01c.38-.8 1.57-.61 1.69.27l1.94 14.45c.08.61.73.95 1.28.68l4.27-2.13c.76-.38 1.57.42 1.2 1.19Z"
+            fill="#307FE2" />
+          <path
+            d="m196.416 185.94-2.77 5.75c-.1.2-.39.15-.42-.07l-.49-3.61a.222.222 0 0 0-.32-.17l-1.07.53c-.19.09-.39-.1-.3-.3l2.77-5.75c.1-.2.39-.15.42.07l.49 3.61c.02.15.18.24.32.17l1.07-.53c.19-.09.39.1.3.3ZM180.076 211.28l-2.77 5.75c-.1.2-.39.15-.42-.07l-.49-3.61a.222.222 0 0 0-.32-.17l-1.07.53c-.19.09-.39-.1-.3-.3l2.77-5.75c.1-.2.39-.15.42.07l.49 3.61c.02.15.18.24.32.17l1.07-.53c.19-.09.39.1.3.3Z"
+            fill="#2163B3" />
+          <path
+            d="M133.806 204.98v16.25c0 1.93-1.8 3.39-3.66 2.93-3.29-.82-6.33-2.27-8.98-4.22l-3.02 3.01c-.82.82-1.89 1.23-2.96 1.23s-2.15-.41-2.97-1.23a4.189 4.189 0 0 1 0-5.93l3.09-3.09a25.522 25.522 0 0 1-3.78-8.27c-.48-1.88.99-3.68 2.92-3.68h16.36c1.66 0 3 1.34 3 3ZM160.466 222.95c-.82.82-1.89 1.23-2.96 1.23s-2.15-.41-2.97-1.23l-3.05-3.04a25.403 25.403 0 0 1-9.02 4.25c-1.86.46-3.66-1-3.66-2.93v-16.25c0-1.66 1.34-3 3-3h16.36c1.93 0 3.4 1.8 2.92 3.68a25.56 25.56 0 0 1-3.75 8.23l3.13 3.13a4.189 4.189 0 0 1 0 5.93Z"
+            fill="#307FE2" />
+          <path
+            d="M130.236 217.47V207.2c0-1.03-.83-1.86-1.86-1.86h-10.2c-1.19 0-2.11 1.11-1.83 2.27.47 1.97 1.46 4.44 4.42 7.4s5.18 3.79 7.19 4.28c1.16.29 2.28-.62 2.28-1.82ZM142.646 217.47V207.2c0-1.03.83-1.86 1.86-1.86h10.2c1.19 0 2.11 1.11 1.83 2.27-.47 1.97-1.46 4.44-4.42 7.4s-5.18 3.79-7.19 4.28c-1.16.29-2.28-.62-2.28-1.82Z"
+            fill="#2163B3" />
+          <path
+            d="M161.156 193.32c.45 1.87-1.02 3.66-2.94 3.66h-16.41c-1.66 0-3-1.35-3-3v-16.52c0-1.93 1.8-3.39 3.67-2.93 3.26.81 6.26 2.23 8.89 4.16l3.17-3.17c.82-.82 1.89-1.23 2.97-1.23 1.08 0 2.14.41 2.96 1.23a4.189 4.189 0 0 1 0 5.93l-3.22 3.23c1.81 2.57 3.15 5.49 3.91 8.64ZM133.806 177.46v16.52c0 1.65-1.34 3-3 3h-16.41c-1.92 0-3.39-1.79-2.94-3.66.76-3.17 2.12-6.1 3.94-8.69l-3.18-3.18a4.189 4.189 0 0 1 0-5.93c.82-.82 1.89-1.23 2.97-1.23 1.08 0 2.14.41 2.96 1.23l3.14 3.14c2.62-1.91 5.61-3.33 8.85-4.13 1.87-.46 3.67 1 3.67 2.93Z"
+            fill="#307FE2" />
+          <path
+            d="M130.236 181.11v10.27c0 1.03-.83 1.86-1.86 1.86h-10.2c-1.19 0-2.11-1.11-1.83-2.27.47-1.97 1.46-4.44 4.42-7.4s5.18-3.79 7.19-4.28c1.16-.29 2.28.62 2.28 1.82ZM142.646 181.11v10.27c0 1.03.83 1.86 1.86 1.86h10.2c1.19 0 2.11-1.11 1.83-2.27-.47-1.97-1.46-4.44-4.42-7.4s-5.18-3.79-7.19-4.28c-1.16-.29-2.28.62-2.28 1.82Z"
+            fill="#2163B3" />
+          <path
+            d="M115.326 180.78a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM157.346 180.78a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM157.346 221.99a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3ZM115.326 221.99a2.15 2.15 0 1 0 0-4.3 2.15 2.15 0 0 0 0 4.3Z"
+            fill="#CCE3FF" />
+          <path
+            d="M127.865 389.584h2.579l3.455 8.431h.136l3.455-8.431h2.579v11.636h-2.023v-7.994h-.108l-3.215 7.96h-1.512l-3.216-7.977h-.108v8.011h-2.022v-11.636Zm13.769 11.636v-8.727h2.057v8.727h-2.057Zm1.034-9.966a1.2 1.2 0 0 1-.841-.324 1.042 1.042 0 0 1-.352-.79c0-.31.117-.573.352-.789.235-.22.515-.33.841-.33.329 0 .61.11.841.33.235.216.352.479.352.789 0 .307-.117.571-.352.79a1.188 1.188 0 0 1-.841.324Zm4.554 4.852v5.114h-2.056v-8.727h1.965v1.483h.103c.201-.489.521-.877.96-1.165.443-.288.991-.432 1.642-.432.602 0 1.127.129 1.574.386a2.6 2.6 0 0 1 1.045 1.12c.25.488.373 1.081.37 1.778v5.557h-2.057v-5.239c0-.583-.152-1.039-.455-1.369-.299-.33-.714-.494-1.244-.494-.36 0-.68.079-.96.238a1.659 1.659 0 0 0-.654.676c-.155.296-.233.654-.233 1.074Zm7.054 5.114v-8.727h2.056v8.727h-2.056Zm1.034-9.966a1.2 1.2 0 0 1-.841-.324 1.043 1.043 0 0 1-.353-.79c0-.31.118-.573.353-.789.235-.22.515-.33.841-.33.329 0 .61.11.841.33.234.216.352.479.352.789 0 .307-.118.571-.352.79a1.188 1.188 0 0 1-.841.324Zm2.497 13.239v-12h2.023v1.443h.119a3.83 3.83 0 0 1 .449-.676c.194-.243.455-.449.784-.62.33-.174.75-.261 1.262-.261.674 0 1.282.172 1.824.517.545.341.977.847 1.295 1.517.322.667.483 1.485.483 2.455 0 .958-.157 1.772-.472 2.443-.314.67-.742 1.182-1.284 1.534a3.302 3.302 0 0 1-1.841.528c-.5 0-.914-.083-1.244-.25a2.514 2.514 0 0 1-.795-.602 3.932 3.932 0 0 1-.461-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.08 1.059.239 1.483.163.425.396.756.699.995.307.234.678.352 1.114.352.454 0 .835-.121 1.142-.364.306-.246.538-.581.693-1.005.159-.428.238-.915.238-1.461a4.16 4.16 0 0 0-.232-1.443c-.156-.42-.387-.75-.694-.988-.306-.239-.689-.358-1.147-.358-.44 0-.813.115-1.12.346-.307.231-.539.555-.699.972-.155.416-.233.907-.233 1.471Zm11.15 4.534c-.852 0-1.591-.187-2.216-.562a3.822 3.822 0 0 1-1.454-1.574c-.341-.674-.512-1.462-.512-2.364 0-.901.171-1.691.512-2.369a3.811 3.811 0 0 1 1.454-1.579c.625-.375 1.364-.563 2.216-.563.853 0 1.591.188 2.216.563a3.774 3.774 0 0 1 1.449 1.579c.345.678.517 1.468.517 2.369 0 .902-.172 1.69-.517 2.364a3.785 3.785 0 0 1-1.449 1.574c-.625.375-1.363.562-2.216.562Zm.012-1.647c.462 0 .848-.127 1.159-.381.31-.258.541-.602.693-1.034.155-.432.233-.913.233-1.443 0-.534-.078-1.017-.233-1.449-.152-.436-.383-.782-.693-1.04-.311-.257-.697-.386-1.159-.386-.474 0-.868.129-1.182.386-.311.258-.544.604-.699 1.04a4.345 4.345 0 0 0-.227 1.449c0 .53.075 1.011.227 1.443.155.432.388.776.699 1.034.314.254.708.381 1.182.381Zm8.514 1.63a3.3 3.3 0 0 1-1.84-.528c-.542-.352-.97-.864-1.285-1.534-.314-.671-.471-1.485-.471-2.443 0-.97.159-1.788.477-2.455.322-.67.756-1.176 1.301-1.517a3.344 3.344 0 0 1 1.824-.517c.512 0 .932.087 1.262.261.329.171.59.377.784.62.193.238.342.464.448.676h.086v-4.352h2.062v11.636h-2.023v-1.375H182a3.513 3.513 0 0 1-.46.676 2.526 2.526 0 0 1-.795.602c-.33.167-.745.25-1.245.25Zm.574-1.687c.436 0 .807-.118 1.114-.352.307-.239.54-.57.699-.995.159-.424.238-.918.238-1.483 0-.564-.079-1.055-.238-1.471-.155-.417-.387-.741-.693-.972-.303-.231-.676-.346-1.12-.346-.458 0-.841.119-1.147.358-.307.238-.538.568-.694.988a4.16 4.16 0 0 0-.233 1.443c0 .546.078 1.033.233 1.461.16.424.392.759.699 1.005.311.243.692.364 1.142.364Z"
+            fill="#2163B3" />
+          <path
+            d="M256.15 353.22H54.5c-5.523 0-10 4.477-10 10v185.23c0 5.523 4.477 10 10 10h201.65c5.523 0 10-4.477 10-10V363.22c0-5.523-4.477-10-10-10Z"
+            fill="#CCE3FF" />
+          <path d="M84.14 414.77H226.5v7.85c0 1.1-.74 2-1.645 2H85.785c-.904 0-1.645-.9-1.645-2v-7.85Z"
+            fill="#2163B3" />
+          <path
+            d="M226.5 414.77H84.14l6.524-29.56c.486-2.19 2.114-3.7 3.974-3.7h120.978c1.842 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+            fill="#307FE2" />
+          <path d="M161.424 388.22h-19.16v6.95h6.391v-3.47h12.769v3.47h6.384v-6.95h-6.384Z" fill="#2163B3" />
+          <path
+            d="M157.525 393.44h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .707-.423.707-.945v-5.069c0-.522-.317-.945-.707-.945Z"
+            fill="#2163B3" />
+          <path
+            d="m161.424 400.986-6.476 3.527-6.293-3.433v-4.17h-6.391v5.627h.028l12.656 6.893 12.832-6.988h.028v-5.532h-6.384v4.076ZM84.14 467.54H226.5v7.85c0 1.1-.74 2-1.645 2H85.785c-.904 0-1.645-.9-1.645-2v-7.85Z"
+            fill="#2163B3" />
+          <path
+            d="M226.5 467.54H84.14l6.524-29.56c.486-2.19 2.114-3.7 3.974-3.7h120.978c1.842 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+            fill="#307FE2" />
+          <path d="M161.424 440.22h-19.16v6.95h6.391v-3.47h12.769v3.47h6.384v-6.95h-6.384Z" fill="#2163B3" />
+          <path
+            d="M157.525 445.44h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .707-.423.707-.945v-5.069c0-.522-.317-.945-.707-.945Z"
+            fill="#2163B3" />
+          <path
+            d="m161.424 452.986-6.476 3.527-6.293-3.433v-4.17h-6.391v5.627h.028l12.656 6.893 12.832-6.988h.028v-5.532h-6.384v4.076ZM84.14 520.32H226.5v7.85c0 1.1-.74 2-1.645 2H85.785c-.904 0-1.645-.9-1.645-2v-7.85Z"
+            fill="#2163B3" />
+          <path
+            d="M226.5 520.32H84.14l6.524-29.56c.486-2.19 2.114-3.7 3.974-3.7h120.978c1.842 0 3.455 1.48 3.957 3.63l6.927 29.63Z"
+            fill="#307FE2" />
+          <path d="M161.424 492.22h-19.16v6.95h6.391v-3.47h12.769v3.47h6.384v-6.95h-6.384Z" fill="#2163B3" />
+          <path
+            d="M157.525 497.44h-4.972c-.39 0-.706.423-.706.945v5.069c0 .522.316.945.706.945h4.972c.39 0 .707-.423.707-.945v-5.069c0-.522-.317-.945-.707-.945Z"
+            fill="#2163B3" />
+          <path
+            d="m161.424 504.986-6.476 3.527-6.293-3.433v-4.17h-6.391v5.627h.028l12.656 6.893 12.832-6.988h.028v-5.532h-6.384v4.076ZM117.089 717.29h-2.125a2.647 2.647 0 0 0-.336-.926 2.492 2.492 0 0 0-.608-.694 2.546 2.546 0 0 0-.829-.426 3.25 3.25 0 0 0-.994-.147c-.633 0-1.194.159-1.682.477-.489.314-.871.776-1.148 1.386-.277.606-.415 1.347-.415 2.222 0 .89.138 1.64.415 2.25.28.606.663 1.064 1.148 1.375.488.307 1.047.46 1.676.46.348 0 .674-.045.977-.136.307-.095.582-.233.824-.415a2.531 2.531 0 0 0 .972-1.58l2.125.012a4.591 4.591 0 0 1-.517 1.557 4.63 4.63 0 0 1-1.029 1.284c-.424.367-.92.655-1.489.863a5.538 5.538 0 0 1-1.892.307c-1.022 0-1.935-.237-2.738-.71-.803-.474-1.436-1.157-1.898-2.051-.462-.894-.693-1.966-.693-3.216 0-1.254.233-2.326.699-3.216.466-.894 1.1-1.578 1.903-2.051.803-.474 1.712-.71 2.727-.71.648 0 1.25.09 1.807.272a4.64 4.64 0 0 1 1.489.801c.436.349.793.777 1.074 1.284a4.8 4.8 0 0 1 .557 1.728Zm1.199 7.71v-8.727h1.994v1.454h.091c.159-.504.432-.892.818-1.165a2.259 2.259 0 0 1 1.336-.414c.113 0 .24.005.38.017.144.007.264.021.358.04v1.892a2.117 2.117 0 0 0-.414-.08 3.906 3.906 0 0 0-.54-.04c-.375 0-.712.082-1.012.245-.295.159-.528.38-.698.664a1.869 1.869 0 0 0-.256.983V725h-2.057Zm7.248 3.273c-.28 0-.54-.023-.779-.068a2.899 2.899 0 0 1-.562-.148l.477-1.602c.299.087.567.128.801.125a.985.985 0 0 0 .62-.222c.181-.14.335-.375.46-.705l.176-.471-3.165-8.909h2.182l2.011 6.591h.091l2.017-6.591h2.188l-3.494 9.784a3.913 3.913 0 0 1-.648 1.187 2.638 2.638 0 0 1-.989.762c-.386.178-.848.267-1.386.267Zm7.3 0v-12h2.023v1.443h.119c.106-.212.256-.438.449-.676.193-.243.455-.449.784-.62.33-.174.75-.261 1.262-.261a3.32 3.32 0 0 1 1.823.517c.546.341.978.847 1.296 1.517.322.667.483 1.485.483 2.455 0 .958-.157 1.772-.472 2.443-.314.67-.742 1.182-1.284 1.534a3.304 3.304 0 0 1-1.841.528c-.5 0-.915-.083-1.244-.25a2.519 2.519 0 0 1-.796-.602 3.922 3.922 0 0 1-.46-.676h-.085v4.648h-2.057Zm2.017-7.637c0 .565.08 1.059.239 1.483.163.425.396.756.699.995.307.234.678.352 1.113.352.455 0 .836-.121 1.142-.364.307-.246.538-.581.694-1.005.159-.428.238-.915.238-1.461 0-.541-.077-1.022-.233-1.443-.155-.42-.386-.75-.693-.988-.307-.239-.689-.358-1.148-.358-.439 0-.812.115-1.119.346-.307.231-.54.555-.699.972-.155.416-.233.907-.233 1.471Zm11.701-4.363v1.591h-5.017v-1.591h5.017Zm-3.778-2.091h2.057v8.193c0 .277.041.489.125.636.087.144.2.243.34.296.141.053.296.079.466.079.129 0 .247-.009.353-.028.109-.019.193-.036.25-.051l.346 1.608c-.11.038-.267.079-.471.125a3.86 3.86 0 0 1-.739.079 3.348 3.348 0 0 1-1.392-.233 2.163 2.163 0 0 1-.983-.806c-.239-.364-.356-.819-.352-1.364v-8.534Zm8.571 10.988c-.852 0-1.591-.187-2.216-.562a3.822 3.822 0 0 1-1.454-1.574c-.341-.674-.511-1.462-.511-2.364 0-.901.17-1.691.511-2.369a3.811 3.811 0 0 1 1.454-1.579c.625-.375 1.364-.563 2.216-.563.853 0 1.591.188 2.216.563a3.774 3.774 0 0 1 1.449 1.579c.345.678.517 1.468.517 2.369 0 .902-.172 1.69-.517 2.364a3.785 3.785 0 0 1-1.449 1.574c-.625.375-1.363.562-2.216.562Zm.012-1.647c.462 0 .848-.127 1.159-.381.31-.258.542-.602.693-1.034.155-.432.233-.913.233-1.443 0-.534-.078-1.017-.233-1.449a2.294 2.294 0 0 0-.693-1.04c-.311-.257-.697-.386-1.159-.386-.474 0-.868.129-1.182.386-.311.258-.544.604-.699 1.04a4.37 4.37 0 0 0-.227 1.449c0 .53.076 1.011.227 1.443.155.432.388.776.699 1.034.314.254.708.381 1.182.381ZM162.503 725l-3.284-11.636h2.267l2.097 8.551h.108l2.239-8.551h2.062l2.244 8.556h.103l2.096-8.556h2.267L171.418 725h-2.079l-2.33-8.165h-.091L164.583 725h-2.08Zm14.551.176a3.647 3.647 0 0 1-1.495-.295 2.446 2.446 0 0 1-1.045-.887c-.254-.39-.381-.871-.381-1.443 0-.492.091-.899.273-1.221.182-.322.43-.58.744-.773a3.785 3.785 0 0 1 1.063-.438 8.628 8.628 0 0 1 1.233-.221c.511-.053.926-.101 1.244-.142.318-.046.549-.114.693-.205.148-.095.222-.24.222-.437v-.034c0-.428-.127-.76-.381-.995s-.619-.352-1.096-.352c-.504 0-.904.11-1.199.329-.292.22-.489.48-.591.779l-1.921-.273c.152-.53.402-.973.75-1.329.349-.36.775-.629 1.279-.807a4.884 4.884 0 0 1 1.67-.273c.421 0 .839.049 1.256.148.417.098.797.261 1.142.488.345.224.621.529.83.915.212.387.318.87.318 1.449V725h-1.978v-1.199h-.068c-.125.243-.301.47-.528.682a2.557 2.557 0 0 1-.847.506c-.337.125-.733.187-1.187.187Zm.534-1.511c.413 0 .771-.082 1.074-.245a1.8 1.8 0 0 0 .699-.659c.166-.272.25-.57.25-.892v-1.028a.99.99 0 0 1-.33.148 4.739 4.739 0 0 1-.511.119c-.19.034-.377.064-.563.091l-.483.068a3.6 3.6 0 0 0-.824.205 1.364 1.364 0 0 0-.573.397c-.141.167-.211.383-.211.648 0 .379.139.665.415.858.277.193.629.29 1.057.29Zm7.559-10.301V725h-2.057v-11.636h2.057Zm3.532 0V725h-2.057v-11.636h2.057Zm5.338 11.806c-.875 0-1.63-.181-2.267-.545a3.692 3.692 0 0 1-1.46-1.557c-.341-.674-.511-1.468-.511-2.38 0-.898.17-1.686.511-2.364a3.872 3.872 0 0 1 1.443-1.591c.618-.383 1.343-.574 2.176-.574a4.41 4.41 0 0 1 1.523.261c.481.171.905.436 1.273.796.371.36.663.818.875 1.375.212.553.318 1.212.318 1.977v.631h-7.153v-1.387h5.181a2.213 2.213 0 0 0-.255-1.051c-.167-.31-.4-.555-.699-.733a1.966 1.966 0 0 0-1.034-.267c-.421 0-.79.103-1.108.307a2.114 2.114 0 0 0-.744.796 2.28 2.28 0 0 0-.268 1.074v1.21c0 .507.093.943.279 1.307.185.359.445.636.778.829.334.189.724.284 1.171.284.299 0 .57-.041.812-.125.243-.087.453-.214.631-.381.178-.166.312-.373.403-.619l1.921.216a2.991 2.991 0 0 1-.693 1.33 3.392 3.392 0 0 1-1.296.875c-.526.204-1.129.306-1.807.306Zm9.339-8.897v1.591h-5.017v-1.591h5.017Zm-3.778-2.091h2.056v8.193c0 .277.042.489.125.636a.68.68 0 0 0 .341.296c.14.053.296.079.466.079.129 0 .246-.009.353-.028.109-.019.193-.036.25-.051l.346 1.608c-.11.038-.267.079-.471.125a3.86 3.86 0 0 1-.739.079 3.348 3.348 0 0 1-1.392-.233 2.163 2.163 0 0 1-.983-.806c-.239-.364-.356-.819-.352-1.364v-8.534Z"
+            fill="#2163B3" />
+          <path
+            d="M153.48 719.9c17.645 0 31.95-14.305 31.95-31.95S171.125 656 153.48 656c-17.646 0-31.95 14.305-31.95 31.95s14.304 31.95 31.95 31.95Z"
+            fill="#2163B3" />
+          <path
+            d="M153.48 713.22c13.956 0 25.27-11.314 25.27-25.27s-11.314-25.27-25.27-25.27-25.27 11.314-25.27 25.27 11.314 25.27 25.27 25.27Z"
+            fill="#307FE2" />
+          <path
+            d="M162.45 686.7c1.86-.95 3.03-2.62 2.76-5.4-.37-3.8-3.65-5.08-7.8-5.44v-5.27h-3.21v5.13c-.85 0-1.71.02-2.57.03v-5.17h-3.21v5.27c-.7.01-1.38.03-2.05.03v-.02h-4.43v3.43s2.37-.04 2.33 0c1.3 0 1.73.76 1.85 1.41v14.45c-.06.41-.3 1.06-1.21 1.06.04.04-2.34 0-2.34 0l-.64 3.83h4.18c.78 0 1.54.01 2.3.02v5.33h3.21v-5.28c.88.02 1.73.03 2.57.02v5.25h3.21v-5.32c5.4-.31 9.18-1.67 9.65-6.74.38-4.08-1.54-5.9-4.61-6.64l.01.02Zm-10.75-7.17c1.81 0 7.51-.58 7.51 3.21 0 3.63-5.7 3.2-7.51 3.2v-6.41Zm0 16.71v-7.07c2.18 0 9.01-.63 9.01 3.53 0 3.99-6.83 3.53-9.01 3.53v.01Z"
+            fill="#fff" />
+          <path
+            d="M206.46 698.59H104.5c-5.523 0-10 4.477-10 10v70.78c0 5.523 4.477 10 10 10h101.96c5.523 0 10-4.477 10-10v-70.78c0-5.523-4.477-10-10-10Z"
+            fill="#CCE3FF" />
+          <path d="M184.02 734.4h32.33v19.15h-32.33c-1.66 0-3-1.34-3-3V737.4c0-1.66 1.34-3 3-3Z" fill="#307FE2" />
+          <path d="M190.91 748.75a4.47 4.47 0 1 0 0-8.94 4.47 4.47 0 0 0 0 8.94Z" fill="#2163B3" />
+        </svg>
+        <div class="flex flex-col gap--md jc-c">
+          <p class="income__body">From your power supply to your Minipod and, finally, in your crypto wallet.
+          </p>
+          <h2 class="income__heading">PLUG & PLAY<br><span class="income__passive">PASSIVE INCOME</span></h2>
+        </div>
+        <a href="M300" onmousedown="plugInMobile()" onmouseenter="plugIn()" onmouseleave="plugOut()"
+          class="income__btn btn btn--primary">Get Started
+          <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.49 6L7.5 6" />
+            <path d="M2.5 1L7.95455 6L2.5 11" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="flex flex-col--lg-tablet jc-sb gap--xl">
+        <div class="footer__column">
+          <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
+          <p class="footer__body">
+            Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low
+            energy
+            cost, and high security, we help businesses with managed and unmanaged miner hosting.
+          </p>
+        </div>
+        <div class="footer__column">
+          <small class="footer__heading">Products</small>
+          <ul class="footer__list">
+            <li><a href="M300" class="footer__list-item">M300 Minipod</a></li>
+            <li><a href="i300" class="footer__list-item">i300 Minipod</a></li>
+            <li><a href="nanopod" class="footer__list-item">NanoPOD</a></li>
+            <li><a href="awnings" class="footer__list-item">Air-Intake Awnings</a></li>
+            <!-- <li><a href="fans" class="footer__list-item">Cooling Fans</a></li> -->
+            <li><a href="spdu" class="footer__list-item">SmartPDU</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <small class="footer__heading">Navigation</small>
+          <ul class="footer__list">
+            <li><a href="turnkey-solutions" class="footer__list-item">Turn-Key Solutions</a></li>
+            <li><a href="press" class="footer__list-item">Press</a></li>
+            <li><a href="contact" class="footer__list-item">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="flex flex-col--lg-tablet jc-sb gap--sm">
+        <div class="flex flex-col--lg-tablet gap--sm">
+          <small class="footer__copyright">© <span class="footer__copyright-year">2023</span> Digital Shovel Holdings
+            Inc.</small>
+        </div>
+        <div class="flex gap--sm ai-c">
+          <a target="_blank" href="https://www.youtube.com/@digital_shovel"><img class="footer__social"
+              src="images/icons/icon_youtube.svg" alt="YouTube Logo Icon"></a>
+          <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
+              src="images/icons/icon_instagram.svg" alt="Instagram Logo Icon"></a>
+          <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
+              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
+          <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
+              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
+          <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
+              src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

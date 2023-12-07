@@ -1,0 +1,14 @@
+@use "../base/breakpoints" as *;
+
+.competitors {
+  background: linear-gradient(hsl(0deg, 0%, 100%) 0%, hsl(0deg, 0%, 100%) 26.8%, var(--blue-700) 26.8%, var(--blue-700) 100%);
+  background-repeat: no-repeat;
+
+  .container {
+    @include breakpoint(sm-desktop) {
+      padding: 6rem 0;
+      margin: 0;
+      max-width: fit-content;
+    }
+  }
+}

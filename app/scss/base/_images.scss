@@ -1,0 +1,20 @@
+.icon {
+  &--sm {
+    width: 22px;
+    height: 22px;
+  }
+
+  &--md {
+    width: 36px;
+    height: 36px;
+  }
+
+  &--lg {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--full-height {
+    height: 100%;
+  }
+}

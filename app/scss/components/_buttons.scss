@@ -1,0 +1,225 @@
+@use "../base/breakpoints" as *;
+
+$btn-padding: 7px 15px;
+$btn-border-radius: 100vh;
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 500;
+  max-width: max-content;
+  padding: $btn-padding;
+  cursor: pointer;
+  letter-spacing: -0.1px;
+  border-radius: $btn-border-radius;
+
+  &__chevron {
+    margin-left: 0.3rem;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &__navbar {
+    @include breakpoint(lg-tablet) {
+      display: none;
+    }
+  }
+
+  &__pause,
+  &__play {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    padding: 0;
+    cursor: pointer;
+    transform: translateX(-50%) scale(2.7);
+    border: none;
+    background-color: transparent;
+
+    @include breakpoint(lg-tablet) {
+      transform: translateX(-50%) scale(4);
+    }
+
+    @include breakpoint(sm-tablet) {
+      top: 360px;
+      transform: translateX(-50%) scale(4);
+    }
+  }
+
+  &__pause svg {
+    transition: transform 150ms ease-in;
+  }
+
+  &__gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+
+    &-left {
+      left: -100px;
+      transform: rotate(180deg) translateY(50%);
+
+      @include breakpoint(lg-tablet) {
+        left: -40px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        left: -30px;
+      }
+    }
+
+    &-right {
+      right: -100px;
+
+      @include breakpoint(lg-tablet) {
+        right: -40px;
+      }
+
+      @include breakpoint(sm-tablet) {
+        right: -30px;
+      }
+    }
+  }
+
+  &--primary {
+    color: #fff;
+    background-image: linear-gradient(180deg, var(--blue-500), var(--blue-600));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 40%),
+      0px 0px 0px 1px var(--blue-600),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
+
+    &:hover {
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 20%),
+        0px 0px 0px 1px var(--blue-600),
+        0px 2px 4px 0px hsla(0, 0%, 0%, 0.5);
+    }
+
+    .btn__chevron path {
+      stroke: #fff;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid var(--blue-500);
+
+    .btn__chevron path {
+      stroke: var(--blue-500);
+    }
+  }
+
+  &--tertiary {
+    color: var(--blue-900);
+
+    .btn__chevron path {
+      stroke: var(--blue-900);
+    }
+  }
+
+  &--white {
+    color: var(--blue-900);
+    background-image: linear-gradient(180deg, var(--blue-gray-100), var(--blue-gray-200));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsla(0, 0%, 100%, 1),
+      0px 0px 0px 1px var(--blue-gray-200),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
+
+    &:hover {
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 80%),
+        0px 0px 1px 1px var(--blue-gray-200),
+        0px 1px 3px 0px hsla(0, 0%, 0%, 0.5);
+    }
+
+    .btn__chevron path {
+      stroke: var(--blue-900);
+    }
+  }
+
+  &--switch {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    position: relative;
+    background-color: white;
+    border: 1px solid var(--blue-200);
+    padding: 0 0.3rem 0 0.4rem;
+    font-size: 0.7rem;
+
+    .switch-icon {
+      transition: transform 300ms ease-out, border 300ms ease-out;
+    }
+
+    &:hover {
+      border: 1px solid var(--blue-500);
+
+      .switch-icon {
+        transform: rotate(-180deg);
+      }
+    }
+
+  }
+
+  &--form {
+    grid-column: span 6;
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: none;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 5px;
+
+    background-image: linear-gradient(180deg, var(--teal-500), var(--teal-600));
+    background-size: 100% 100%;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
+    box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 60%),
+      0px 0px 0px 1px var(--teal-600),
+      0px 2px 8px 1px hsla(0, 0%, 0%, 0.25);
+
+    &:hover {
+      background-size: 400% 400%;
+      box-shadow: inset 0px 1px 1px 0px hsl(0deg 0% 100% / 20%),
+        0px 0px 0px 1px var(--teal-600),
+        0px 2px 4px 0px hsla(0, 0%, 0%, 0.5);
+    }
+  }
+
+  &--as-c {
+    align-self: center;
+  }
+
+  &--card {
+    max-width: 100%;
+    border-radius: 7px;
+  }
+
+  &--apply {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding: 5px 6px 5px 9px;
+
+    svg {
+      transform: scale(0.8);
+    }
+  }
+
+  &--paypal {
+    max-width: none;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #ffc43a;
+    background-image: url("../images/icons/icon_paypal.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
