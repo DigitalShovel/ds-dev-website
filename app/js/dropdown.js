@@ -9,13 +9,23 @@ class Dropdown {
 
     this.container = container;
     this.button = container.querySelector(".dropdown__button");
+    this.menuContainer = container.querySelector(".dropdown__menu-container");
     this.menu = container.querySelector(".dropdown__menu");
+    
     this.items = container.querySelectorAll(".dropdown__menu-item");
+
+    this.setMenuPosition();
   }
 
   initEvents() {
     document.addEventListener("click", this.onClickOutside.bind(this));
     document.addEventListener("keydown", this.onKeyEvent.bind(this));
+  }
+
+  setMenuPosition() {
+    const itemCount = this.items.length;
+    const topPosition = -(itemCount * 28.3);
+    this.menuContainer.style.top = `${topPosition}px`;
   }
 
   toggle() {
@@ -26,7 +36,7 @@ class Dropdown {
   }
 
   onClickOutside(e) {
-    if (!this.isOpen) return;
+    if (!this.isOpen) return; 
 
     let targetElement = e.target;
 
