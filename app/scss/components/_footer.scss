@@ -10,8 +10,8 @@
 
   &__body {
     max-width: 30ch;
-    font-size: 0.9rem;
-    color: var(--blue-50);
+    font-size: 0.8rem;
+    color: var(--cool-gray-200);
 
     @include breakpoint(md-tablet) {
       max-width: fit-content;
