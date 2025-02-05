@@ -158,6 +158,11 @@ small {
     text-decoration: line-through;
   }
 
+  &--disclaimer {
+    font-weight: 400;
+    color: var(--blue-gray-500);
+  }
+
   &--strikethrough {
     position: relative;
     overflow: visible;
