@@ -1,10 +1,11 @@
 .calculator {
   &__select {
     font-family: var(--primary-font);
-    border: none;
+    background-color: var(--pure-white);
+    border: 1px solid var(--blue-gray-200);
     border-radius: 5px;
     height: 24px;
-    padding: 0;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .1);
   }
 
   &__input {
@@ -21,6 +22,10 @@
     &-group {
       display: flex;
       align-items: center;
+
+      &:has(.calculator__input--disabled) {
+        cursor: not-allowed;
+      }
     }
 
     &-label {
@@ -39,6 +44,7 @@
     &--disabled {
       background-color: var(--cool-gray-50);
       color: var(--cool-gray-900);
+      pointer-events: none;
     }
   }
 
