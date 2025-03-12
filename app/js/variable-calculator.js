@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Set initial disabled state
         const initialValue = select.value.toLowerCase();
-        if (initialValue === 'amplitude') {
+        if (initialValue === 'amperage') {
             disableInput(ampInput);
         } else if (initialValue === 'voltage') {
             disableInput(voltInput);
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             inputs.forEach(input => enableInput(input));
             
             const selectedValue = select.value.toLowerCase();
-            if (selectedValue === 'amplitude') {
+            if (selectedValue === 'amperage') {
                 disableInput(ampInput);
             } else if (selectedValue === 'voltage') {
                 disableInput(voltInput);
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedValue = select.value.toLowerCase();
 
             // Calculate based on selected type
-            if (selectedValue === 'amplitude' && volt && watt) {
+            if (selectedValue === 'amperage' && volt && watt) {
                 const result = Math.round(watt / (volt * sqrt));
                 ampInput.value = result;
             }
