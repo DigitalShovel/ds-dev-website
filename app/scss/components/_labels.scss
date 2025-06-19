@@ -1,0 +1,9 @@
+.label {
+  &__pill {
+    background-color: var(--blue-50);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.7rem;
+    border-radius: 100vh;
+  }
+}
