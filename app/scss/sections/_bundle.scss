@@ -69,5 +69,23 @@
         height: 600px;
       }
     }
+
+    .bluax-details {
+      &__desktop {
+        display: block;
+
+        @include breakpoint(sm-tablet) {
+          display: none;
+        }
+      }
+
+      &__mobile {
+        display: none;
+
+        @include breakpoint(sm-tablet) {
+          display: block;
+        }
+      }
+    }
   }
 }
