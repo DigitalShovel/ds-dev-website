@@ -197,7 +197,6 @@
     padding-top: 2rem;
     position: absolute;
     z-index: 999;
-    top: -150px;
     left: 50%;
     opacity: 0;
     transform: translate(-50%, 40%);
@@ -210,7 +209,7 @@
     flex-direction: column;
     gap: 0.5rem;
     width: max-content;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 24px 0 hsla(213, 78%, 16%, 0.15);
