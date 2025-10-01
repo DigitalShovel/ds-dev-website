@@ -1,13 +1,15 @@
 // Function to check if user is authenticated (for other pages)
 function isAuthenticated() {
-    const authenticated = localStorage.getItem('authenticated');
-    const loginTime = localStorage.getItem('loginTime');
+    // Use sessionStorage instead of localStorage for tab-based sessions
+    // sessionStorage is cleared when the tab/window is closed
+    const authenticated = sessionStorage.getItem('authenticated');
+    const loginTime = sessionStorage.getItem('loginTime');
     
     if (!authenticated || !loginTime) {
         return false;
     }
     
-    // Check if login is still valid (24 hours)
+    // Check if login is still valid (24 hours within the same session)
     const twentyFourHours = 24 * 60 * 60 * 1000;
     const now = Date.now();
     const timeSinceLogin = now - parseInt(loginTime);
@@ -23,8 +25,8 @@ function isAuthenticated() {
 
 // Function to logout
 function logout() {
-    localStorage.removeItem('authenticated');
-    localStorage.removeItem('loginTime');
+    sessionStorage.removeItem('authenticated');
+    sessionStorage.removeItem('loginTime');
     // Only redirect if not already on login page
     if (!window.location.pathname.includes('login.html')) {
         window.location.href = '/login.html';
@@ -39,8 +41,8 @@ function requireAuthentication() {
     }
     
     if (!isAuthenticated()) {
-        // Store the current page to redirect back after login
-        localStorage.setItem('redirectAfterLogin', window.location.pathname);
+        // Store the current page to redirect back after login (use sessionStorage)
+        sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
         window.location.href = '/login.html';
     }
 }
@@ -108,13 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Simulate authentication delay
                 setTimeout(() => {
                     if (username === VALID_USERNAME && password === VALID_PASSWORD) {
-                        // Successful authentication
-                        localStorage.setItem('authenticated', 'true');
-                        localStorage.setItem('loginTime', Date.now().toString());
+                        // Successful authentication - use sessionStorage for tab-based sessions
+                        sessionStorage.setItem('authenticated', 'true');
+                        sessionStorage.setItem('loginTime', Date.now().toString());
                         
                         // Check if there's a redirect URL stored
-                        const redirectUrl = localStorage.getItem('redirectAfterLogin');
-                        localStorage.removeItem('redirectAfterLogin');
+                        const redirectUrl = sessionStorage.getItem('redirectAfterLogin');
+                        sessionStorage.removeItem('redirectAfterLogin');
                         
                         // Redirect to original page or homepage
                         if (redirectUrl && redirectUrl !== '/login.html') {
@@ -178,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('visibilitychange', () => {
         if (!document.hidden && !window.location.pathname.includes('login.html')) {
             if (!isAuthenticated()) {
-                localStorage.setItem('redirectAfterLogin', window.location.pathname);
+                sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
                 window.location.href = '/login.html';
             }
         }
@@ -188,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('focus', () => {
         if (!window.location.pathname.includes('login.html')) {
             if (!isAuthenticated()) {
-                localStorage.setItem('redirectAfterLogin', window.location.pathname);
+                sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
                 window.location.href = '/login.html';
             }
         }
