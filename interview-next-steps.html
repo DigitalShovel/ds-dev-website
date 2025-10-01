@@ -37,9 +37,16 @@
   </noscript>
 
   <!-- Javascript -->
+  <script defer src="/app/js/login.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/copyright.js"></script>
+  <script>
+    // Protect this page - require authentication
+    document.addEventListener('DOMContentLoaded', () => {
+      requireAuthentication();
+    });
+  </script>
 
   <title>Digital Shovel • Interview Next Steps</title>
 

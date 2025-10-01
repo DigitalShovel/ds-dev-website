@@ -41,10 +41,17 @@
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
 
   <!-- Javascript -->
+  <script defer src="/app/js/login.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/contact.js"></script>
   <script defer src="/app/js/detect-location.js"></script>
+  <script>
+    // Protect this page - require authentication
+    document.addEventListener('DOMContentLoaded', () => {
+      requireAuthentication();
+    });
+  </script>
 
   <title>Digital Shovel • SmartPDU Giveaway</title>
 

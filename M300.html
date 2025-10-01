@@ -41,6 +41,7 @@
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
 
   <!-- Javascript -->
+  <script defer src="/app/js/login.js"></script>
   <script defer src="/app/js/detect-scroll-m300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
@@ -51,6 +52,12 @@
   <script defer src="/app/js/subnav-title-change.js"></script>
   <script defer src="/app/js/detect-current-page.js"></script>
   <script defer src="/app/js/copyright.js"></script>
+  <script>
+    // Protect this page - require authentication
+    document.addEventListener('DOMContentLoaded', () => {
+      requireAuthentication();
+    });
+  </script>
 
   <title>Digital Shovel • M300 Minipod</title>
 

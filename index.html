@@ -43,11 +43,18 @@
   <script defer src="/app/js/ScrollSmoother.min.js"></script>
 
   <!-- Javascript -->
+  <script defer src="/app/js/login.js"></script>
   <script defer src="/app/js/home.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
   <script defer src="/app/js/scroll-animations-home.js?v=1.0"></script>
   <script defer src="/app/js/copyright.js"></script>
+  <script>
+    // Protect this page - require authentication
+    document.addEventListener('DOMContentLoaded', () => {
+      requireAuthentication();
+    });
+  </script>
   <script defer src="/app/js/logo-scroller.js"></script>
 
   <title>Digital Shovel</title>

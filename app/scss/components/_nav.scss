@@ -150,7 +150,8 @@
   position: relative;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &[data-open="true"] {
     .dropdown__menu-container {
       visibility: visible;
       opacity: 1;
@@ -194,13 +195,13 @@
   }
 
   &__menu-container {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     position: absolute;
     z-index: 999;
     left: 50%;
     opacity: 0;
-    transform: translate(-50%, 40%);
-    transition: opacity 300ms ease-out, visibility 300ms ease-out, transform 300ms ease-out;
+    transform: translate(-50%, 5px);
+    transition: opacity 150ms ease-out, visibility 150ms ease-out, transform 150ms ease-out;
     visibility: hidden;
   }
 
