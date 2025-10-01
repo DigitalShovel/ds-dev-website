@@ -75,6 +75,21 @@
       }
     }
   }
+
+  &--bluax {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 2rem;
+    margin: 3rem auto 0;
+
+    @include breakpoint(lg-tablet) {
+      margin: 3rem auto 0;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include breakpoint(sm-tablet) {
+      margin: 0 auto 0;
+    }
+  }
 }
 
 .card {

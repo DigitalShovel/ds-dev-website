@@ -60,6 +60,19 @@ label {
   &__vosk {
     padding: 0;
   }
+
+  &__bluax {
+    padding: 0 2rem;
+    margin: 0;
+
+    @include breakpoint(lg-tablet) {
+      width: 100%;
+
+      form {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 .fieldset__order,
@@ -169,7 +182,7 @@ textarea {
     display: inline-block;
     position: relative;
     width: 100%;
-    padding: 0.7rem 0.8rem 0.6rem 2.2rem;
+    padding: 0.7rem 0 0.6rem 2.2rem;
     font-size: 0.8rem;
     background-color: white;
     color: #000;

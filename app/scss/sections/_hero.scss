@@ -281,6 +281,14 @@
     @include breakpoint(md-mobile) {
       width: 300px;
     }
+
+    &--bluax {
+      width: 280px;
+
+      @include breakpoint(md-mobile) {
+        width: 250px;
+      }
+    }
   }
 
   &__product-photo {

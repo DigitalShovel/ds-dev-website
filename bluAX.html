@@ -1,39 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Search engine optimization -->
-  <meta name="author" content="Digital Shovel">
+  <meta name="author" content="Digital Shovel" />
   <meta name="description"
-    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
+    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting." />
 
   <!-- Social media tags -->
-  <meta property="og:title" content="Digital Shovel • Turn-Key Solutions">
+  <meta property="og:title" content="Digital Shovel • BluAX" />
   <meta property="og:description"
-    content="Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.">
-  <meta property="og:image" content="/images/backgrounds/meta-image.jpg">
-  <meta property="og:url" content="/turnkey-solutions.html">
-  <meta property="og:site_name" content="Digital Shovel">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Digital Shovel Logo">
+    content="Digital Shovel, the industry leading manufacturer of turnkey, mobile crypto mining containers, has announced the launch of their latest innovation, the NanoPOD. Designed specifically for small to medium mining operations, the NanoPOD stands out as the company's most compact and efficient offering to date, setting a new standard in size and convenience." />
+  <meta property="og:image" content="/images/backgrounds/meta-image-bluax.jpg" />
+  <meta property="og:url" content="/bluax.html" />
+  <meta property="og:site_name" content="Digital Shovel" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="Digital Shovel Logo" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="dist/style.min.css?v=2.1.2">
+  <link rel="stylesheet" href="dist/style.min.css?v=2.2.1" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-    media="print" onload="this.media='all'" rel="stylesheet">
+    media="print" onload="this.media='all'" rel="stylesheet" />
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet" />
   </noscript>
 
   <!-- GSAP -->
@@ -41,36 +41,49 @@
   <script defer src="/app/js/ScrollTrigger.min.js"></script>
 
   <!-- Javascript -->
-  <script defer src="/app/js/login.js"></script>
+  <script defer src="/app/js/detect-scroll-i300.js"></script>
   <script defer src="/app/js/nav-toggle.js"></script>
   <script defer src="/app/js/dropdown.js"></script>
+  <script defer src="/app/js/gallery.js?v=1.0"></script>
+  <script defer src="/app/js/subnav.js"></script>
   <script defer src="/app/js/detect-current-page.js"></script>
+  <script defer src="/app/js/subnav-title-change.js"></script>
   <script defer src="/app/js/copyright.js"></script>
-  <script>
-    // Protect this page - require authentication
-    document.addEventListener('DOMContentLoaded', () => {
-      requireAuthentication();
-    });
-  </script>
 
-  <title>Digital Shovel • Turn-Key Solutions</title>
+  <title>Digital Shovel • BluAX</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-810441893"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "AW-810441893");
+  </script>
 
   <!-- Hotjar Tracking Code for https://digitalshovel.com/ -->
   <script>
     (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
       h._hjSettings = { hjid: 3324634, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
       r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   </script>
 </head>
 
 <body>
-
-<nav class="navbar">
+  <nav class="navbar navbar--borderless">
     <div class="navbar__container">
       <a href="/" class="navbar__logo" aria-label="Digital Shovel Logo">
         <svg title="Digital Shovel Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.45 80.96">
@@ -213,98 +226,188 @@
     </div>
   </nav>
 
-  <main class="main turnkey container">
+  <nav class="subnav">
+    <div class="subnav__container">
+      <ul class="subnav__links">
+        <li>
+          <a class="subnav__link subnav__link--product subnav__link--active">Product</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--specs">Specifications</a>
+        </li>
+        <li>
+          <a class="subnav__link subnav__link--bundle">Details</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="flex flex-col gap--xl">
-      <div class="flex flex-col gap--sm">
-        <h1 class="hero__heading hero__heading--left">Turn-Key Solutions</h1>
-        <p class="hero__body">Our turn-key solutions are designed to make your life easier by providing a
-          comprehensive and efficient
-          solution to your business needs. From start to finish, we'll handle all the details, so you can focus on
-          what
-          you do best.
-        </p>
-      </div>
-      <div class="flex flex-col--lg-tablet jc-sb gap--lg w-100">
-        <div class="turnkey__mining">
-          <h2>Start mining in</h2>
-          <h3>45 days</h3>
-          <h2>fully turn-key and managed</h4>
+  <main class="main">
+    <section id="product" class="container container--i300 flex flex-col ai-c gap--md">
+      <div class="flex flex-col ai-c gap--sm">
+        <div class="flex flex-col--sm-mobile ai-c gap--sm">
+          <h4>Lottery Miner for the Masses</h4>
         </div>
-        <div class="turnkey__watt-price">
-          <img src="images/icons/icon_coin.svg" alt="Dollar Coin">
-          <div class="flex flex-col">
-            <h4>6¢ - 7¢ <small>/ kWh</small></h4>
-            <span>Pricing based on volume</span>
+        <img src="images/illustrations/bluAX_logo_gray+blue.svg" alt="BluAX Logo">
+      </div>
+      <div class="flex flex-col--sm-tablet ai-c gap--lg">
+        <img class="hero__product-illustration hero__product-illustration--bluax" src="images/illustrations/bluAX_flat.svg"
+          alt="BluAX Front View Illustration" />
+        <div class="gallery-container">
+          <div class="gallery gallery__col-1">
+            <img class="photo photo-1 photo__i300" src="images/photos/bluax/bluax_front-view.jpg"
+              alt="BluAX Front View" />
+            <img class="photo photo-1 photo__i300" src="images/photos/bluax/blueax_side-view_standing.jpg"
+              alt="BluAX Standing Side View" />
+            <div class="modal">
+              <div class="modal-container">
+                <span class="close">
+                  <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                </span>
+                <div class="modal__photo-container">
+                  <img src="" class="modal__photo" />
+                  <button class="btn__gallery btn__gallery-left">
+                    <svg class="arrow arrow-left" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button class="btn__gallery btn__gallery-right">
+                    <svg class="arrow arrow-right" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11.5" cy="11.305" r="9" fill="#B8D8FF" />
+                      <g clip-path="url(#a)">
+                        <path d="m10.167 7.972 3.636 3.333-3.636 3.334" stroke="#307FE2" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M8.5 6.305h7v10h-7z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <div class="flex flex-col jc-c gap--md">
+                    <span class="modal__caption"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="grid grid__col-6 mtop--xl">
-      <div class="grid-item grid-turnkey__item-1">
-        <img class="grid-item__icon" src="images/icons/icon_land-lease_v2.svg" alt="Land Lease Icon">
-        <h5>Land Lease</h5>
-        <p>2-year lease with flat take-or-pay power contract inclusive. Fully prepped site with pad or piles
-          designed
-          specifically for the Digital Shovel Minipods.</p>
+    <a href="#specifications" class="scroll scroll__i300">
+      <span class="scroll__text">scroll for more</span>
+      <svg class="scroll__arrow" width="13" height="12" viewBox="0 0 13 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 1L7.95455 6L2.5 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <section id="specifications" class="card__grid card__grid--bluax">
+      <div class="card-1 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c jc-c">
+          <img class="icon--md" src="images/icons/icon_spdu.svg" alt="Microchip Icon" />
+          <h6>Hashrate 1.2 TH/s</h6>
+        </div>
       </div>
-      <div class="grid-item grid-turnkey__item-2">
-        <img class="grid-item__icon" src="images/icons/icon_transformer-hookup_v2.svg" alt="Transformer Hookup Icon">
-        <h5>Transformer Hookup</h5>
-        <p>Included in this offering is the hook-up of our medium voltage transformer to the low voltage switchgear
-          that
-          will feed the Minipods.</p>
+      <div class="card-5 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c jc-c">
+          <img class="icon--md" src="images/icons/icon_wifi.svg" alt="Wifi Capacity Icon" />
+          <h6>Wi-Fi</h6>
+        </div>
       </div>
-      <div class="grid-item grid-turnkey__item-3">
-        <img class="grid-item__icon" src="images/icons/icon_pod.svg" alt="Minipod Icon">
-        <h5>300kW Pod</h5>
-        <p>Contracts can be purchased in 300kW increments using our Minipod line. You must take an entire pod and
-          will
-          have VPN access to both the pod's miners, as well as the SmartPDU. At the end of the contract, YOU own the
-          Minipod.</p>
+      <div class="card-2 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c jc-c">
+          <img class="icon--md" src="images/icons/icon_power.svg" alt="Power Icon" />
+          <h6>Same Power as your Phone</h6>
+        </div>
       </div>
-      <div class="grid-item grid-turnkey__item-4">
-        <img class="grid-item__icon" src="images/icons/icon_forklift.svg" alt="Forklift Icon">
-        <h5>Deployment</h5>
-        <p>Deployment, configuration, and setup of your miners is included in the cost of this contract.</p>
-      </div>
-      <div class="grid-item grid-turnkey__item-5">
-        <img class="grid-item__icon" src="images/icons/icon_truck.svg" alt="Truck Icon">
-        <h5>Delivery</h5>
-        <p>Transportation of the pod to the mining farm is included in the cost of this contract.</p>
+      <div class="card-5 card__list flex flex-col gap--md">
+        <div class="flex gap--sm ai-c jc-c">
+          <img class="icon--md" src="images/icons/icon_fan.svg" alt="Mining Capacity Icon" />
+          <h6>Ultra Quiet Fan</h6>
+        </div>
       </div>
     </section>
 
-    <section class="turnkey__pricing flex flex-col--lg-tablet jc-sb ai-c gap--xl">
-      <div class="flex flex-col">
-        <h5>Power Deposit</h5>
-        <h2 class="flex ai-end gap--sm">$42k
-          <small class="text--dark-blue">/pod</small>
-        </h2>
-      </div>
-      <h2>+</h2>
-      <div class="flex flex-col">
-        <h5>Pod Deposit</h5>
-        <h2 class="flex ai-end gap--sm">$15k
-          <span class="flex flex-col gap--sm">
-            <small class="text--emphasis text--blue">+$2300/m</small>
-            <small class="text--dark-blue">for 12 months</small>
-          </span>
-        </h2>
+
+    <section class="registration flex flex-col ai-c jc-c">
+      <div class="form form__bluax">
+        <form action="https://formspree.io/f/mldnlqyq" method="POST" autocomplete="on" enctype="multipart/form-data">
+          <div class="fieldset fieldset__3-col flex flex-col">
+            <label class="fieldset__label" for="name">Name</label>
+            <input class="fieldset__text" aria-label="Enter your name" type="text" id="input-name"
+              name="name" placeholder="John Doe" autocomplete="on" required="required" />
+          </div>
+          <div class="fieldset fieldset__3-col flex flex-col">
+            <label class="fieldset__label" for="Email">Email</label>
+            <input class="fieldset__text" aria-label="Enter your email" type="email" id="input-email" name="Email"
+              placeholder="johndoe@example.com" autocomplete="on" required="required" />
+          </div>
+          <div class="fieldset fieldset__3-col flex flex-col">
+            <label class="fieldset__label" for="Phone">Phone</label>
+            <input class="fieldset__text" aria-label="Enter your phone number" type="tel" id="input-phone" name="Phone"
+              placeholder="+5 (555) 555 5555" autocomplete="on" required="required" />
+          </div>
+          <div class="fieldset fieldset__3-col flex flex-col">
+            <label class="fieldset__label" for="learned-bluax-from">Where did you learn about BluAX?</label>
+            <select id="learned-bluax-from" name="learned-bluax-from" aria-label="Select where did you learn about BluAX" class="fieldset__select"
+              required="required">
+              <option value="">Select One</option>
+              <optgroup label="Conferences">
+                <option value="BTC Prague">BTC Prague</option>
+                <option value="Mining Disrupt">Mining Disrupt</option>
+                <option value="Digital Shovel Fest">Digital Shovel Fest</option>
+                <option value="Global Energy Show">Global Energy Show</option>
+              </optgroup>
+              <optgroup label="Social Media">
+                <option value="Instagram">Instagram</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Twitter/X">Twitter/X</option>
+                <option value="Facebook">Facebook</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="Friend">Friend</option>
+                <option value="Co-worker">Co-worker</option>
+                <option value="Advertisement">Advertisement</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="fieldset fieldset__6-col fieldset__message flex flex-col">
+            <label class="fieldset__label" for="Message">Message</label>
+            <textarea class="fieldset__text" aria-label="Enter a message" type="text" id="input-message" name="Message"
+              placeholder="Tell us more about your project, business needs, and budget." required="required"></textarea>
+          </div>
+          <input type="hidden" name="_next" value="https://digitalshovel.com/thanks" />
+          <input aria-label="Submit Button" class="btn btn--primary btn--form" type="submit" value="Register for BluAX News"/>
+        </form>
       </div>
     </section>
-    
-    <section class="turnkey__cta flex flex-col ai-c">
-      <a class="btn btn--primary" href="contact">Get Started
-        <svg class="btn__chevron" width="13" height="12" viewBox="0 0 13 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.49 6L7.5 6" />
-          <path d="M2.5 1L7.95455 6L2.5 11" />
-        </svg>
-      </a>
-      <h3>You own the pods at the end</h3>
-      <h4>*2 Year Minimum Commitment & Only 6MW Available</h4>
+
+    <section id="bundle" class="bundle">
+      <div class="container container--full-width flex flex-col gap--xsm ai-c jc-c">
+        <h2 class="text__heading"><span class="text--blue">Details</span> of your BluAX</h2>
+        <p class="text__body text--center">USB-C, Wi-Fi, ultra quiet fan, 1.2 TH/s hashrate, and high power efficiency.
+        </p>
+        <div class="bundle__illustrations">
+          <img class="bluax-details__desktop" src="images/illustrations/bluax_details_desktop.svg"
+            alt="BluAX Details" />
+          <img class="bluax-details__mobile" src="images/illustrations/bluax_details_mobile.svg" alt="BluAX Details" />
+        </div>
+      </div>
     </section>
   </main>
 
@@ -313,10 +416,8 @@
       <div class="flex flex-col--lg-tablet jc-sb gap--xl">
         <div class="footer__column">
           <a href="/"><img class="footer__logo" src="images/icons/icon_logo-white.svg" alt="Digital Shovel Logo" /></a>
-          <p class="footer__body">
-            Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile units. With low
-            energy
-            cost, and high security, we help businesses with managed and unmanaged miner hosting.
+          <p class="footer__body">Digital Shovel helps businesses scale Crypto-Mining operations with turn-key mobile
+            units. With low energy cost, and high security, we help businesses with managed and unmanaged miner hosting.
           </p>
         </div>
         <div class="footer__column">
@@ -341,24 +442,24 @@
       <div class="footer__divider"></div>
       <div class="flex flex-col--lg-tablet jc-sb gap--sm">
         <div class="flex flex-col--lg-tablet gap--sm">
-          <small class="footer__copyright">© <span class="footer__copyright-year">2023</span> Digital Shovel Holdings Inc.</small>
+          <small class="footer__copyright">© <span class="footer__copyright-year">2023</span> Digital Shovel Holdings
+            Inc.</small>
         </div>
         <div class="flex gap--sm ai-c">
           <a target="_blank" href="https://www.youtube.com/@digital_shovel"><img class="footer__social"
-            src="images/icons/icon_youtube.svg" alt="YouTube Logo Icon"></a>
+              src="images/icons/icon_youtube.svg" alt="YouTube Logo Icon" /></a>
           <a target="_blank" href="https://www.instagram.com/digital_shovel/"><img class="footer__social"
-              src="images/icons/icon_instagram.svg" alt="Instagram Logo Icon"></a>
+              src="images/icons/icon_instagram.svg" alt="Instagram Logo Icon" /></a>
           <a target="_blank" href="https://twitter.com/Digital_Shovel"><img class="footer__social"
-              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon"></a>
+              src="images/icons/icon_twitter.svg" alt="Twitter Logo Icon" /></a>
           <a target="_blank" href="https://ca.linkedin.com/company/digital-shovel"><img class="footer__social"
-              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon"></a>
+              src="images/icons/icon_linkedin.svg" alt="LinkedIn Logo Icon" /></a>
           <a target="_blank" href="https://www.facebook.com/DigitalShovelInc/"><img class="footer__social"
-              src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon"></a>
+              src="images/icons/icon_facebook.svg" alt="Facebook Logo Icon" /></a>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
